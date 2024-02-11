@@ -6,7 +6,7 @@ LAYOUT TV
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 /*Général*/
-.layout-tv {font-size:110%;font-family: 'Quicksand', sans-serif;}
+.layout-tv {font-family: 'Quicksand', sans-serif;}
 	/* Image Fond */
 	.layout-tv .backdropImage {filter: blur(10px);}
 	/* Couleur hover & focus */
