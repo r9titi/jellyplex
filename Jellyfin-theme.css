@@ -6,7 +6,7 @@ LAYOUT TV
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 /*Général*/
-.layout-tv {font-family: 'Quicksand', sans-serif;}
+.layout-tv {font-size:125%;font-family: 'Quicksand', sans-serif;}
 	/* Image Fond */
 	.layout-tv .backdropImage {filter: blur(10px);}
 	/* Couleur hover & focus */
@@ -17,7 +17,7 @@ LAYOUT TV
 /* Page Media */
 .layout-tv .detailPageContent {padding-left: 6.45vw;}
 	/* Titres */
-	.layout-tv .detailPagePrimaryContainer {margin-top:6vw;padding-top:1vw;padding-bottom:1vw;display:flex;}
+	.layout-tv .detailPagePrimaryContainer {margin-top:10vw;padding-top:1vw;padding-bottom:1vw;display:flex;}
 	.layout-tv .detailRibbon {background-color: rgba(0,0,0,0.40) !important;}
 	.itemName.parentNameLast.withOriginalTitle {color:#fff;text-transform: capitalize;}
 	.itemName.originalTitle {font-style:italic;font-weight:200;}
