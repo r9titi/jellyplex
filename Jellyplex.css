@@ -43,11 +43,9 @@ LAYOUT TV
 	.layout-tv .detailButton:focus, .detailButton:hover {background-color:rgba(255,255,255,0.30) !important;transform: scale(1) !important;border-radius: 2em !important;}
 	.layout-tv .mainDetailButtons {margin-top: 1.5em; font-size:100%}
 	.layout-tv .material-icons.detailButton-icon.play_arrow {color: #000;}
-	.layout-tv .detailButton-icon {color:#e2e2e2;}
 	.layout-tv .listViewUserDataButtons {display: none;}
 	.layout-tv .detailButton-content {margin:3px;}
-	.layout-tv .ratingbutton-withrating {color:red !important;}
-	.layout-tv .playstatebutton-played {color:#E0AE00 !important;}
+
 		/* Lecture */
 		.layout-tv .btnPlay {border-radius: 2em;background-color: #fff;color:#000;}
 		.layout-tv .btnPlay:hover, .layout-tv .btnPlay:focus {transform: scale(1.2) !important;}
