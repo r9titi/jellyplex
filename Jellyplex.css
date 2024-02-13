@@ -46,6 +46,7 @@ LAYOUT TV
 	.layout-tv .detailButton-icon {color:#e2e2e2;}
 	.layout-tv .listViewUserDataButtons {display: none;}
 	.layout-tv .detailButton-content {margin:3px;}
+	.layout-tv .ratingbutton-withrating {color:red;}
 		/* Lecture */
 		.layout-tv .btnPlay {border-radius: 2em;background-color: #fff;color:#000;}
 		.layout-tv .btnPlay:hover, .layout-tv .btnPlay:focus {transform: scale(1.2) !important;}
