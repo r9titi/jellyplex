@@ -6,7 +6,7 @@ LAYOUT TV
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 /*Général*/
-.layout-tv {font-family: 'Quicksand', sans-serif;}
+.layout-tv {font-family: 'Quicksand', sans-serif;font-size:115% !important;}
 	/* Couleur hover & focus */
 	.layout-tv .emby-tab-button.show-focus:hover, .layout-tv .emby-tab-button.show-focus:focus, .layout-tv .paper-icon-button-light:hover:not(:disabled), .layout-tv .paper-icon-button-light:focus:not(:disabled) {background: none;}
 	/* Top Menu */
