@@ -6,17 +6,14 @@ LAYOUT TV
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 /*Général*/
-.layout-tv {font-family: 'Quicksand', sans-serif;font-size:115% !important;}
+.layout-tv {font-family: 'Quicksand', sans-serif;font-size:110%;}
+	/* Effet affiches */
+	.layout-tv .card.show-animation:focus>.cardBox {transform: scale(1.1);-webkit-transform:scale(1.1);}
+	.layout-tv .card:focus .cardBox.visualCardBox, .card:focus .cardBox:not(.visualCardBox) .cardScalable {border:solid 2px;border-color:#fff !important;}
 	/* Couleur hover & focus */
 	.layout-tv .emby-tab-button.show-focus:hover, .layout-tv .emby-tab-button.show-focus:focus, .layout-tv .paper-icon-button-light:hover:not(:disabled), .layout-tv .paper-icon-button-light:focus:not(:disabled) {background: none;}
 	/* Top Menu */
-	.skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred {background: none;background-color: rgba(0, 0, 0, 0);}
-	.skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred.noHomeButtonHeader {background: none;background-color: rgba(0, 0, 0, 0);}
-
-/* Acceuil */
-	/* Liens */
-	.layout-tv .card .cardBox.visualCardBox, .card .cardBox:not(.visualCardBox) .cardScalable {opacity: 1}
-	.layout-tv .card:focus .cardBox.visualCardBox, .card:focus .cardBox:not(.visualCardBox) .cardScalable {border:solid 2px !important;}
+	.layout-tv .skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred {background: none;background-color: rgba(0, 0, 0, 0);}
 
 /* Backdrop */
 .layout-tv .backgroundContainer.withBackdrop {background:url(https://r9titi.github.io/jellyplex/mask.png);background-size: cover;width: 100%;height: 100%;}
@@ -38,35 +35,34 @@ LAYOUT TV
 	.layout-tv .endsAt {width:100%;padding-top:1vw;padding-bottom:1vw;font-style:italic;font-size:.9em;color:#5F5F5F;}
 
 	/* Boutons */
-	.layout-tv .detailButton {border-radius:5em;margin:1% !important;background:rgba(255,255,255,0.20);flex-direction: row;}
-	.layout-tv .detailButton:focus:after {content : attr(title);border-radius:2em !important;font-weight:500;}
-	.layout-tv .detailButton:focus, .detailButton:hover {background-color:rgba(255,255,255,0.30) !important;transform: scale(1) !important;border-radius: 2em !important;}
+	.layout-tv .detailButton {border-radius:50%;margin:.7% !important;background:rgba(255,255,255,0.20);flex-direction: row;color: #909090;}
+	.layout-tv .detailButton:focus:after {content : attr(title);color: #151515;border-radius:3em !important;font-weight:600;}
+	.layout-tv .detailButton:focus, .layout-tv .detailButton:hover {background-color:rgba(255,255,255,1) !important;transform: scale(1) !important;border-radius: 3em !important;color:#000;transition: margin-left 1s;}
 	.layout-tv .mainDetailButtons {margin-top: 1.5em; font-size:100%}
 	.layout-tv .material-icons.detailButton-icon.play_arrow {color: #000;}
 	.layout-tv .listViewUserDataButtons {display: none;}
 	.layout-tv .detailButton-content {margin:3px;}
-
 		/* Lecture */
-		.layout-tv .btnPlay {border-radius: 2em;background-color: #fff;color:#000;}
-		.layout-tv .btnPlay:hover, .layout-tv .btnPlay:focus {transform: scale(1.2) !important;}
-		.layout-tv .btnPlay::after {content : attr(title);margin: 0 10px 0 2px;color: #000 !important;font-weight:600 !important;}
+		.layout-tv .btnPlay {border-radius: 3em;background-color: #fff;color:#151515;}
+		.layout-tv .btnPlay:hover, .layout-tv .btnPlay:focus {;transform: scale(1.2) !important;}
+		.layout-tv .btnPlay::after {content : attr(title);margin: 0 10px 0 2px;color: #151515 !important;font-weight:600 !important;}
 		.layout-tv .btnPlay.detailButton {flex-direction: row;}
-		/* Liste Actions */
-		.layout-tv .listItem-button:focus{color:#000;}
 
 	/* Selection Audio & Sous-titres */
 	.layout-tv .detailPageContent {padding-left: 4vw;margin-top:2vw;}
-	.layout-tv .trackSelections {margin-bottom:4vw;}
+	.layout-tv .trackSelections {margin-bottom:3vw;background-color:rgba(255,255,255,0.10);border-radius:1em;padding:1em;}
 	.layout-tv .trackSelections .selectArrowContainer {color:#A4A4A4;}
 	.layout-tv .selectLabel {color:#A4A4A4;}
-	.layout-tv .detailTrackSelect {background: none;border: none;}
-	.layout-tv .trackSelections .selectContainer .detailTrackSelect:focus {color:#fff;transform:none;}
-	
+	.layout-tv .detailTrackSelect {background: none;border: none;color:#00A4DC;}
+	.layout-tv .trackSelections .selectContainer .detailTrackSelect:focus {background:rgba(255,255,255,0.20);color: #e2e2e2;transform:none;padding-left:.2vw;}
+		/* Liste Actions */
+		.layout-tv .listItem-button:focus{background-color: #00A4DC;color:#000;font-weight:600;}	
+
 	/* Synopsis & Infos */
-	.layout-tv .detailSection {padding-bottom:5vw;}
+	.layout-tv .detailSection {padding-bottom:4vw;}
 	.layout-tv .detailSectionContent {color:#fff;text-align:justify;width:60%;margin-bottom: 2vw;}
 	.layout-tv .itemDetailsGroup {color:#A4A4A4;}
-	.layout-tv .itemDetailsGroup .show-focus:focus {background-color:transparent;transform: none;}
+	.layout-tv .itemDetailsGroup .show-focus:focus, .layout-tv .itemDetailsGroup .show-focus:hover {background-color:transparent;transform: none;color:#00A4DC !important;}
 
 	/* Mot Clés, Liens Externes*/
 	.itemTags, .itemExternalLinks {display:none;}
@@ -75,10 +71,9 @@ LAYOUT TV
 	/* Distribution Cercles */
 	#castContent .cardImageContainer.coveredImage.cardContent.itemAction.lazy.non-blurhashable.lazy-image-fadein-fast,
 	#castContent .cardImageContainer.coveredImage.defaultCardBackground.defaultCardBackground1.cardContent.itemAction {border-radius: 50%;}
-	#castContent .personCard:focus{transform: none;}
-	#castContent .cardPadder.cardPadder-overflowPortrait.lazy-hidden-children, #castContent .cardPadder-mixedPortrait, #castContent .cardPadder-overflowPortrait, #castContent .cardPadder-portrait, #castContent .overflowPortraitCard-textCardPadder {border-radius: 50%;padding-bottom: 100%;}
+	#castContent .cardPadder.cardPadder-overflowPortrait.lazy-hidden-children, #castContent .cardPadder-mixedPortrait, #castContent .cardPadder-overflowPortrait, #castContent #castContent .cardPadder-portrait, #castContent .overflowPortraitCard-textCardPadder {border-radius: 50%;padding-bottom: 100%;}
 	#castContent .cardOverlayButton-br {bottom: 0;position: absolute;left: 38%;}
 	#castContent .cardOverlayContainer {border-radius: 50%;}
 	#castContent > button > div > div.cardScalable > div.cardImageContainer.coveredImage.cardContent.lazy.non-blurhashable.lazy-image-fadein-fast {border-radius:50%;}
-	#castContent .card:focus .personcard .cardScalable {border-radius:50%;}
-
+	#castContent .personCard:focus .cardBox .cardScalable {border-radius:50%;filter:none;}
+	
