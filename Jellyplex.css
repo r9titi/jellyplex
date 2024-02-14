@@ -58,7 +58,7 @@ LAYOUT TV
 	.layout-tv .trackSelections .selectContainer .selectLabel {display: none;}
 	.layout-tv .trackSelections .selectArrowContainer {color:#00A4DC;top:.5em;}
 	.layout-tv .detailTrackSelect {background: none;border: none;color:#00A4DC;}
-	.layout-tv .trackSelections .trackSelectionFieldContainer  {background-color:rgba(0,255,255,0.10);border-radius:.3em;padding:.5em;display:inline-block;max-width:30%;font-size:90%;}
+	.layout-tv .trackSelections .trackSelectionFieldContainer {background-color:rgba(0,255,255,0.10);border-radius:.3em;padding:.5em;display:inline-block;max-width:30%;font-size:90%;}
 	.layout-tv .trackSelections .selectContainer .detailTrackSelect {max-width:90%;}
 	.layout-tv .trackSelections .trackSelectionFieldContainer:focus-within {background:rgba(255,255,255,0.20);}
 	.layout-tv .trackSelections .selectContainer .detailTrackSelect:focus {color: #e2e2e2 !important;transform:none;-webkit-transform:none;}
@@ -71,7 +71,8 @@ LAYOUT TV
 	.layout-tv .itemDetailsGroup {color:#A4A4A4;}
 	.layout-tv .itemDetailsGroup .show-focus:focus, .layout-tv .itemDetailsGroup .show-focus:hover {background-color:transparent;transform: none;color:#00A4DC !important;}
 		/* Bouton Voir Plus */
-.layout-tv .overview-expand {transform: scalenone;-webkit-transform:none;border-radius: 3em;}
+		.layout-tv .overview-expand {transform: none;-webkit-transform:none;border-radius: .3em;color:#8C8C8C;padding:.5em;}
+		.layout-tv .overview-expand:focus {background-color:rgba(0,255,255,0.10);color:#e2e2e2;transform:none;}
 
 	/* Mot Clés, Liens Externes*/
 	.itemTags, .itemExternalLinks {display:none;}
