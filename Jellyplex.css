@@ -6,17 +6,29 @@ LAYOUT TV
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 /*Général*/
-.layout-tv {font-family: 'Quicksand', sans-serif;font-size:115%;}
+.layout-tv {font-family: 'Quicksand', sans-serif;font-size:120%;}
+
+/* Page Login*/
+.layout-tv .hideMainDrawer .backgroundContainer {background:url(../.local/share/jellyfin/data/splaqhscreen.png);background-size: cover;width: 100%;height: 100%;}
+.layout-tv #loginPage .cardBox {background-color: rgba(0, 0, 0, 0.6);border-radius:.3em;}
+.layout-tv #loginPage .cardScalable {padding:3% 3% 5% 3%;background-color: rgba(0, 0, 0, 0.4);}
+.layout-tv #loginPage .cardPadder {border-radius:.3em .3em 0 0;}
+.layout-tv #loginPage .cardContent {border-radius:50%;width:70%;height:70%;top:15%;left:15%;}
+.layout-tv #loginPage .readOnlyContent {margin-top:4vw !important;}
+.layout-tv #loginPage .emby-button.show-focus {background-color: rgba(0, 0, 0, 0.6);max-width:60%;margin-left:auto;margin-right:auto;margin-bottom:.5vw;border-radius:.3em;}
+.layout-tv #loginPage .emby-button.show-focus:focus {background-color: rgba(0, 0, 0, 0.2);transform: scale(1.02)}
+
 	/* Effet affiches */
 	.layout-tv .card.show-animation:focus>.cardBox {transform: scale(1.1);-webkit-transform:scale(1.1);}
-	.layout-tv .card:focus .cardBox.visualCardBox, .card:focus .cardBox:not(.visualCardBox) .cardScalable {border:solid 1px;border-color:#fff !important;}
+	.layout-tv .card:focus .cardBox.visualCardBox, .card:focus .cardBox:not(.visualCardBox) .cardScalable {border:solid 1px;border-color:#fff !important;border-radius:5px;}
 	/* Couleur hover & focus */
 	.layout-tv .emby-tab-button.show-focus:hover, .layout-tv .emby-tab-button.show-focus:focus, .layout-tv .paper-icon-button-light:hover:not(:disabled), .layout-tv .paper-icon-button-light:focus:not(:disabled) {background: none;}
 	/* Top Menu */
 	.layout-tv .skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred {background: none;background-color: rgba(0, 0, 0, 0);}
 
-/* Backdrop */
-.layout-tv .backgroundContainer.withBackdrop {background:url(https://r9titi.github.io/jellyplex/mask.png);background-size: cover;width: 100%;height: 100%;}
+/* Accueil */
+.layout-tv .withSectionTabs .backdropImage {filter: blur(10px);}
+.layout-tv .withSectionTabs .backgroundContainer {background:none;background-color:rgba(0,0,0,.8);}
 
 /* Page Sagas */
 .layout-tv .detailPagePrimaryContent .detailSection {padding-bottom:3vw;}
@@ -26,6 +38,9 @@ LAYOUT TV
 /* Page Media */
 .layout-tv .detailImageContainer .card .cardBox {display:none;}
 .layout-tv .detailPagePrimaryContainer {padding-left: 4vw;margin-top:2vw;}
+
+	/* Backdrop */
+	.layout-tv .backgroundContainer {background:url(https://r9titi.github.io/jellyplex/mask.png);background-size: cover;width: 100%;height: 100%;}
 	/* Titres */
 	.itemName.parentNameLast.withOriginalTitle {color:#fff;text-transform: capitalize;}
 	.itemName.originalTitle {font-style:italic;font-weight:200;}
@@ -34,10 +49,9 @@ LAYOUT TV
 	.layout-tv .mediaInfoOfficialRating {color: #0D0D0D;border-radius: .3em;padding: 2px 7px;background-color: rgba(255,255,255,0.90);border: none;font-weight: 600;}
 	.layout-tv .endsAt {width:100%;padding-top:1vw;padding-bottom:1vw;font-style:italic;font-size:.9em;color:#5F5F5F;}
 	/* Notes */
-	.layout-tv .starRatingContainer {margin-left:75%;background-color: rgba(0,0,0,.5);padding:2px 7px;border-radius:.3em;color:#e2e2e2;}
+	.layout-tv .starRatingContainer {background-color: rgba(0,0,0,.5);padding:2px 7px;border-radius:.3em;color:#e2e2e2;}
 	.layout-tv .mediaInfoCriticRatingFresh {background-position: 20%;}
 	.layout-tv .mediaInfoCriticRating {background-color: rgba(0,0,0,.5);padding:2px 5px 2px 35px;border-radius:.3em;color:#e2e2e2;}
-
 	/* Boutons */
 	.layout-tv .detailButton {border-radius:50%;margin:.7% !important;background:rgba(255,255,255,0.20);flex-direction: row;color: #909090;}
 	.layout-tv .detailButton:focus:after {content : attr(title);color: #151515;border-radius:3em !important;font-weight:600;}
@@ -59,7 +73,7 @@ LAYOUT TV
 	.layout-tv .trackSelections .selectArrowContainer {color:#00A4DC;top:.5em;}
 	.layout-tv .detailTrackSelect {background: none;border: none;color:#00A4DC;}
 	.layout-tv .trackSelections .trackSelectionFieldContainer {background-color:rgba(0,255,255,0.10);border-radius:.3em;padding:.5em;display:inline-block;max-width:30%;font-size:90%;}
-	.layout-tv .trackSelections .selectContainer .detailTrackSelect {max-width:90%;}
+	.layout-tv .trackSelections .selectContainer .selectAudio, .layout-tv .trackSelections .selectContainer .selectSubtitles {max-width:90%;}
 	.layout-tv .trackSelections .trackSelectionFieldContainer:focus-within {background:rgba(255,255,255,0.20);}
 	.layout-tv .trackSelections .selectContainer .detailTrackSelect:focus {color: #e2e2e2 !important;transform:none;-webkit-transform:none;}
 		/* Liste Actions */
@@ -70,6 +84,7 @@ LAYOUT TV
 	.layout-tv .detailSectionContent {color:#fff;text-align:justify;width:60%;margin-bottom: 2vw;}
 	.layout-tv .itemDetailsGroup {color:#A4A4A4;}
 	.layout-tv .itemDetailsGroup .show-focus:focus, .layout-tv .itemDetailsGroup .show-focus:hover {background-color:transparent;transform: none;color:#00A4DC !important;}
+	.layout-tv .detailSection .detail-clamp-text {display: inline-block;}
 		/* Bouton Voir Plus */
 		.layout-tv .overview-expand {transform: none;-webkit-transform:none;border-radius: .3em;color:#8C8C8C;padding:.5em;}
 		.layout-tv .overview-expand:focus {background-color:rgba(0,255,255,0.10);color:#e2e2e2;transform:none;}
