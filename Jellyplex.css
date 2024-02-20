@@ -6,18 +6,18 @@ LAYOUT TV
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 /*Général*/
-.layout-tv {font-family: 'Quicksand', sans-serif;}
+.layout-tv {font-family: 'Quicksand', sans-serif;font-size:120% !important;}
 
 /* Page Login*/
-.layout-tv .hideMainDrawer .backgroundContainer {background:url(../.local/share/jellyfin/data/splaqhscreen.png);background-size: cover;width: 100%;height: 100%;}
+.hideMainDrawer .backgroundContainer {background-image: url('/Branding/Splashscreen?format=jpg&foregroundLayer=0.15');background-position: center;background-size: cover;}
+#loginPage ::after{background-color:rgba(0,0,0,0.6);background-size: cover;width: 100%;height: 100%;filter:blur(10px);}
 #loginPage .cardBox {background-color: rgba(0, 0, 0, 0.6);border-radius:.3em;}
 #loginPage .cardScalable {padding:3% 3% 5% 3%;background-color: rgba(0, 0, 0, 0.4);}
 #loginPage .cardPadder {border-radius:.3em .3em 0 0;}
 #loginPage .cardContent {border-radius:50%;width:70%;height:70%;top:15%;left:15%;}
 #loginPage .readOnlyContent {margin-top:4vw !important;}
 #loginPage .emby-button.show-focus {background-color: rgba(0, 0, 0, 0.6);max-width:60%;margin-left:auto;margin-right:auto;margin-bottom:.5vw;border-radius:.3em;}
-#loginPage .emby-button.show-focus:focus {background-color: rgba(0, 0, 0, 0.2);transform: scale(1.02)}
-
+#loginPage .emby-button.show-focus:focus {background-color: rgba(255, 255, 255, 0.8);transform: scale(1.02);color:#000;}
 	/* Effet affiches */
 	.layout-tv .card.show-animation:focus>.cardBox {transform: scale(1.1);-webkit-transform:scale(1.1);}
 	.layout-tv .card:focus .cardBox.visualCardBox, .card:focus .cardBox:not(.visualCardBox) .cardScalable {border:solid 1px;border-color:#fff !important;border-radius:5px;}
@@ -38,9 +38,8 @@ LAYOUT TV
 /* Page Media */
 .layout-tv .detailImageContainer .card .cardBox {display:none;}
 .layout-tv .detailPagePrimaryContainer {padding-left: 4vw;margin-top:2vw;}
-
 	/* Backdrop */
-	.layout-tv .backgroundContainer {background:url(https://r9titi.github.io/jellyplex/mask.png);background-size: cover;width: 100%;height: 100%;}
+	.layout-tv .libraryDocument .backgroundContainer {background:url(https://r9titi.github.io/jellyplex/mask.png);background-size: cover;width: 100%;height: 100%;}
 	/* Titres */
 	.itemName.parentNameLast.withOriginalTitle {color:#fff;text-transform: capitalize;}
 	.itemName.originalTitle {font-style:italic;font-weight:200;}
