@@ -2,22 +2,22 @@
 LAYOUT TV
 ***************************************************/
 
-@import url("https://cdn.jsdelivr.net/gh/prayag17/Jellyfin-Icons/sharp.css");
+@import url("https://cdn.jsdelivr.net/gh/prayag17/Jellyfin-Icons/Sharp.css");
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 /*Général*/
 .layout-tv {font-family: 'Quicksand', sans-serif;font-size:120% !important;}
 
 /* Page Login*/
-.hideMainDrawer .backgroundContainer {background-image: url('/Branding/Splashscreen?format=jpg&foregroundLayer=0.15');background-position: center;background-size: cover;}
-#loginPage ::after{background-color:rgba(0,0,0,0.6);background-size: cover;width: 100%;height: 100%;filter:blur(10px);}
+.layout-tv .hideMainDrawer .backdropContainer {background: url('/Branding/Splashscreen?format=jpg&foregroundLayer=0.15');background-position: center;background-size: cover;filter: blur(10px);}
+.layout-tv .hideMainDrawer .backgroundContainer {background-color: rgba(0,0,0,0.60);}
 #loginPage .cardBox {background-color: rgba(0, 0, 0, 0.6);border-radius:.3em;}
 #loginPage .cardScalable {padding:3% 3% 5% 3%;background-color: rgba(0, 0, 0, 0.4);}
 #loginPage .cardPadder {border-radius:.3em .3em 0 0;}
 #loginPage .cardContent {border-radius:50%;width:70%;height:70%;top:15%;left:15%;}
 #loginPage .readOnlyContent {margin-top:4vw !important;}
 #loginPage .emby-button.show-focus {background-color: rgba(0, 0, 0, 0.6);max-width:60%;margin-left:auto;margin-right:auto;margin-bottom:.5vw;border-radius:.3em;}
-#loginPage .emby-button.show-focus:focus {background-color: rgba(255, 255, 255, 0.8);transform: scale(1.02);color:#000;}
+#loginPage .emby-button.show-focus:focus {background-color: rgba(255, 255, 255, 1);transform: scale(1.02);color:#000;}
 	/* Effet affiches */
 	.layout-tv .card.show-animation:focus>.cardBox {transform: scale(1.1);-webkit-transform:scale(1.1);}
 	.layout-tv .card:focus .cardBox.visualCardBox, .card:focus .cardBox:not(.visualCardBox) .cardScalable {border:solid 1px;border-color:#fff !important;border-radius:5px;}
@@ -39,7 +39,7 @@ LAYOUT TV
 .layout-tv .detailImageContainer .card .cardBox {display:none;}
 .layout-tv .detailPagePrimaryContainer {padding-left: 4vw;margin-top:2vw;}
 	/* Backdrop */
-	.layout-tv .libraryDocument .backgroundContainer {background:url(https://r9titi.github.io/jellyplex/mask.png);background-size: cover;width: 100%;height: 100%;}
+	.layout-tv .withBackdrop {background:url(https://r9titi.github.io/jellyplex/mask.png);background-size: cover;width: 100%;height: 100%;}
 	/* Titres */
 	.itemName.parentNameLast.withOriginalTitle {color:#fff;text-transform: capitalize;}
 	.itemName.originalTitle {font-style:italic;font-weight:200;}
@@ -64,7 +64,6 @@ LAYOUT TV
 		.layout-tv .btnPlay:hover, .layout-tv .btnPlay:focus {;transform: scale(1.2) !important;}
 		.layout-tv .btnPlay::after {content : attr(title);margin: 0 10px 0 2px;color: #151515 !important;font-weight:600 !important;}
 		.layout-tv .btnPlay.detailButton {flex-direction: row;}
-
 	/* Selection Audio & Sous-titres */
 	.layout-tv .detailPageContent {padding-left: 4vw;margin-top:2vw;}
 	.layout-tv .trackSelections {margin-bottom:3vw;}
@@ -77,7 +76,6 @@ LAYOUT TV
 	.layout-tv .trackSelections .selectContainer .detailTrackSelect:focus {color: #e2e2e2 !important;transform:none;-webkit-transform:none;}
 		/* Liste Actions */
 		.layout-tv .listItem-button:focus{background-color: #00A4DC;color:#000;font-weight:600;}	
-
 	/* Synopsis & Infos */
 	.layout-tv .detailSection {padding-bottom:4vw;}
 	.layout-tv .detailSectionContent {color:#fff;text-align:justify;width:60%;margin-bottom: 2vw;}
@@ -87,11 +85,8 @@ LAYOUT TV
 		/* Bouton Voir Plus */
 		.layout-tv .overview-expand {transform: none;-webkit-transform:none;border-radius: .3em;color:#8C8C8C;padding:.5em;}
 		.layout-tv .overview-expand:focus {background-color:rgba(0,255,255,0.10);color:#e2e2e2;transform:none;}
-
 	/* Mot Clés, Liens Externes*/
 	.itemTags, .itemExternalLinks {display:none;}
-
-
 	/* Distribution Cercles */
 	#castContent .cardImageContainer.coveredImage.cardContent.itemAction.lazy.non-blurhashable.lazy-image-fadein-fast,
 	#castContent .cardImageContainer.coveredImage.defaultCardBackground.defaultCardBackground1.cardContent.itemAction {border-radius: 50%;}
@@ -100,4 +95,7 @@ LAYOUT TV
 	#castContent .cardOverlayContainer {border-radius: 50%;}
 	#castContent > button > div > div.cardScalable > div.cardImageContainer.coveredImage.cardContent.lazy.non-blurhashable.lazy-image-fadein-fast {border-radius:50%;}
 	#castContent .personCard:focus .cardBox .cardScalable {border-radius:50%;filter:none;}
+
+/* Lecteur */
+.layout-tv .sliderBubble {border-radius:.3em;background:rgba(0,0,0,0.40);}
 	
