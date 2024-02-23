@@ -19,8 +19,12 @@ LAYOUT TV
 #loginPage .emby-button.show-focus {background-color: rgba(0, 0, 0, 0.6);max-width:60%;margin-left:auto;margin-right:auto;margin-bottom:.5vw;border-radius:.3em;}
 #loginPage .emby-button.show-focus:focus {background-color: rgba(255, 255, 255, 1);transform: scale(1.02);color:#000;}
 	/* Effet affiches */
-	.layout-tv .card.show-animation:focus>.cardBox {-webkit-transform:scale(1.1);transform: scale(1.1);}
-	.layout-tv .card:focus .cardBox.visualCardBox, .card:focus .cardBox:not(.visualCardBox) .cardScalable {border:solid 2px;border-color:#fff !important;}
+	.layout-tv .card.show-animation:focus>.cardBox {-webkit-transform:scale(1.06);transform: scale(1.06);border:none;}
+	.layout-tv .card:focus .cardBox.visualCardBox, .card:focus .cardBox:not(.visualCardBox) .cardScalable {border:none;}
+	.layout-tv .card:focus .cardBox.visualCardBox, .card:focus .cardBox:not(.visualCardBox) .cardScalable::after {content: '';position: absolute;top: 0; left: 0;right: 0; bottom: 0;background: rgba(255, 255, 255, 0.15);border-radius:.5em .5em 0 0;}
+	.layout-tv .cardBox {background-color: rgba(0, 0, 0, 0.4);border-radius:.5em;-webkit-box-shadow: 2px 4px 10px 0px rgba(0,0,0,0.3);-moz-box-shadow: 2px 4px 10px 0px rgba(0,0,0,0.3);box-shadow: 2px 4px 10px 0px rgba(0,0,0,0.5);}
+	.layout-tv .card .cardBox.visualCardBox, .layout-tv .card .cardBox:not(.visualCardBox) .cardScalable, .layout-tv .card .cardBox:not(.visualCardBox) .cardPadder, .layout-tv .cardScalable .cardImageContainer {border-radius: .5em .5em 0 0;}
+	.layout-tv .cardText-secondary {padding-bottom: 10px;}
 	/* Couleur hover & focus */
 	.layout-tv .emby-tab-button.show-focus:hover, .layout-tv .emby-tab-button.show-focus:focus, .layout-tv .paper-icon-button-light:hover:not(:disabled), .layout-tv .paper-icon-button-light:focus:not(:disabled) {background: none;}
 	/* Top Menu */
@@ -29,10 +33,6 @@ LAYOUT TV
 /* Accueil */
 .layout-tv .withSectionTabs .backdropImage {filter: blur(10px);}
 .layout-tv .withSectionTabs .backgroundContainer {background:none;background-color:rgba(0,0,0,.8);}
-	/* Affiches */
-	.layout-tv .cardBox {background-color: rgba(0, 0, 0, 0.4);border-radius:.5em;-webkit-box-shadow: 2px 4px 10px 0px rgba(0,0,0,0.3);-moz-box-shadow: 2px 4px 10px 0px rgba(0,0,0,0.3);box-shadow: 2px 4px 10px 0px rgba(0,0,0,0.5);}
-	.layout-tv .card .cardBox.visualCardBox, .layout-tv .card .cardBox:not(.visualCardBox) .cardScalable, .layout-tv .card .cardBox:not(.visualCardBox) .cardPadder, .layout-tv .cardScalable .cardImageContainer {border-radius: .5em .5em 0 0;}
-	.layout-tv .cardText-secondary {padding-bottom: 10px;}
 	/* Mes Medias */
 	.layout-tv .section0 .itemsContainer-tv>.overflowBackdropCard {width:20vw;}
 	.layout-tv .section0 .cardBox {background: none;border-radius:.5em;-webkit-box-shadow: none;-moz-box-shadow: none;box-shadow: none;}
