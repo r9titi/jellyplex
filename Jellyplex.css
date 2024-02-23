@@ -6,7 +6,7 @@ LAYOUT TV
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 /*Général*/
-.layout-tv {font-family: 'Quicksand', sans-serif;font-size:120% !important;}
+.layout-tv {font-family: 'Quicksand', sans-serif;font-size:122% !important;}
 
 /* Page Login*/
 .layout-tv .hideMainDrawer .backdropContainer {background: url('/Branding/Splashscreen?format=jpg&foregroundLayer=0.15');background-position: center;background-size: cover;filter: blur(10px);}
@@ -19,8 +19,8 @@ LAYOUT TV
 #loginPage .emby-button.show-focus {background-color: rgba(0, 0, 0, 0.6);max-width:60%;margin-left:auto;margin-right:auto;margin-bottom:.5vw;border-radius:.3em;}
 #loginPage .emby-button.show-focus:focus {background-color: rgba(255, 255, 255, 1);transform: scale(1.02);color:#000;}
 	/* Effet affiches */
-	.layout-tv .card.show-animation:focus>.cardBox {transform: scale(1.1);-webkit-transform:scale(1.1);}
-	.layout-tv .card:focus .cardBox.visualCardBox, .card:focus .cardBox:not(.visualCardBox) .cardScalable {border:solid 1px;border-color:#fff !important;border-radius:5px;}
+	.layout-tv .card.show-animation:focus>.cardBox {-webkit-transform:scale(1.1);transform: scale(1.1);}
+	.layout-tv .card:focus .cardBox.visualCardBox, .card:focus .cardBox:not(.visualCardBox) .cardScalable {border:solid 2px;border-color:#fff !important;}
 	/* Couleur hover & focus */
 	.layout-tv .emby-tab-button.show-focus:hover, .layout-tv .emby-tab-button.show-focus:focus, .layout-tv .paper-icon-button-light:hover:not(:disabled), .layout-tv .paper-icon-button-light:focus:not(:disabled) {background: none;}
 	/* Top Menu */
@@ -29,17 +29,42 @@ LAYOUT TV
 /* Accueil */
 .layout-tv .withSectionTabs .backdropImage {filter: blur(10px);}
 .layout-tv .withSectionTabs .backgroundContainer {background:none;background-color:rgba(0,0,0,.8);}
+	/* Affiches */
+	.layout-tv .cardBox {background-color: rgba(0, 0, 0, 0.4);border-radius:.5em;-webkit-box-shadow: 2px 4px 10px 0px rgba(0,0,0,0.3);-moz-box-shadow: 2px 4px 10px 0px rgba(0,0,0,0.3);box-shadow: 2px 4px 10px 0px rgba(0,0,0,0.5);}
+	.layout-tv .card .cardBox.visualCardBox, .layout-tv .card .cardBox:not(.visualCardBox) .cardScalable, .layout-tv .card .cardBox:not(.visualCardBox) .cardPadder, .layout-tv .cardScalable .cardImageContainer {border-radius: .5em .5em 0 0;}
+	.layout-tv .cardText-secondary {padding-bottom: 10px;}
+	/* Mes Medias */
+	.layout-tv .section0 .itemsContainer-tv>.overflowBackdropCard {width:20vw;}
+	.layout-tv .section0 .cardBox {background: none;border-radius:.5em;-webkit-box-shadow: none;-moz-box-shadow: none;box-shadow: none;}
+	.layout-tv .section0 .card .cardBox.visualCardBox, .layout-tv .section0 .card .cardBox:not(.visualCardBox) .cardScalable, .layout-tv .section0 .card .cardBox:not(.visualCardBox) .cardPadder, .layout-tv .section0 .cardScalable .cardImageContainer {border-radius: .5em;}
 
 /* Page Sagas */
 .layout-tv .detailPagePrimaryContent .detailSection {padding-bottom:3vw;}
 .layout-tv .itemDetailsGroup {margin-top:0;}
-.layout-tv .collectionItems {padding-left: 24vw;}
+.layout-tv .collectionItems {padding-left: 0;}
+.layout-tv .collectionItems .padded-left {padding-left:0;}
+
+/* Page Series */
+.layout-tv #seriesAirTime .emby-button.show-focus:focus {color: #00A4DC !important;-webkit-transform:none;transform:none;background:none;}
+	/* A Suivre */
+	.layout-tv .nextUpSection .itemsContainer-tv>.overflowBackdropCard {width:20vw;}
+	.layout-tv .nextUpSection .cardBox {background: none;border-radius:.5em;-webkit-box-shadow: none;-moz-box-shadow: none;box-shadow: none;}
+	.layout-tv .nextUpSection .card .cardBox.visualCardBox, .layout-tv .nextUpSection .card .cardBox:not(.visualCardBox) .cardScalable, .layout-tv .nextUpSection .card .cardBox:not(.visualCardBox) .cardPadder, .layout-tv .nextUpSection .cardScalable .cardImageContainer {border-radius: .5em;}
+	/* Saisons */
+	.layout-tv #childrenCollapsible .cardText {padding-bottom: 10px;}
+	/* Episodes */
+	.layout-tv #childrenCollapsible .listItem {background-color: rgba(0, 0, 0, 0.6);border-radius: .3em;margin-bottom: 1vw;}
+	.layout-tv #childrenCollapsible .listItem:focus {background-color: rgba(0, 0, 0, 0.2);color:#e2e2e2;font-weight:400;}
+	.layout-tv .listItemImage-large-tv {height:13vw !important;}
+	.layout-tv #childrenCollapsible .mediaInfoItem {padding-top:1vw;}
+	.layout-tv #childrenCollapsible .starRatingContainer {padding-top:0;}
+	.layout-tv #childrenCollapsible .listItem .secondary {text-align: justify;}
 
 /* Page Media */
 .layout-tv .detailImageContainer .card .cardBox {display:none;}
 .layout-tv .detailPagePrimaryContainer {padding-left: 4vw;margin-top:2vw;}
 	/* Backdrop */
-	.layout-tv .withBackdrop {background:url(https://r9titi.github.io/jellyplex/mask.png);background-size: cover;width: 100%;height: 100%;}
+	.layout-tv .withBackdrop {background:url(https://r9titi.github.io/jellyplex/img/mask.png);background-size: cover;width: 100%;height: 100%;}
 	/* Titres */
 	.itemName.parentNameLast.withOriginalTitle {color:#fff;text-transform: capitalize;}
 	.itemName.originalTitle {font-style:italic;font-weight:200;}
@@ -70,10 +95,10 @@ LAYOUT TV
 	.layout-tv .trackSelections .selectContainer .selectLabel {display: none;}
 	.layout-tv .trackSelections .selectArrowContainer {color:#00A4DC;top:.5em;}
 	.layout-tv .detailTrackSelect {background: none;border: none;color:#00A4DC;}
-	.layout-tv .trackSelections .trackSelectionFieldContainer {background-color:rgba(0,255,255,0.10);border-radius:.3em;padding:.5em;display:inline-block;max-width:30%;font-size:90%;}
+	.layout-tv .trackSelections .trackSelectionFieldContainer {background-color:rgba(255,255,255,0.10);border-radius:.3em;padding:.5em;display:inline-block;max-width:30%;font-size:90%;}
 	.layout-tv .trackSelections .selectContainer .selectAudio, .layout-tv .trackSelections .selectContainer .selectSubtitles {max-width:90%;}
 	.layout-tv .trackSelections .trackSelectionFieldContainer:focus-within {background:rgba(255,255,255,0.20);}
-	.layout-tv .trackSelections .selectContainer .detailTrackSelect:focus {color: #e2e2e2 !important;transform:none;-webkit-transform:none;}
+	.layout-tv .trackSelections .selectContainer .detailTrackSelect:focus {color: #e2e2e2 !important;-webkit-transform:none;transform:none;}
 		/* Liste Actions */
 		.layout-tv .listItem-button:focus{background-color: #00A4DC;color:#000;font-weight:600;}	
 	/* Synopsis & Infos */
@@ -83,13 +108,14 @@ LAYOUT TV
 	.layout-tv .itemDetailsGroup .show-focus:focus, .layout-tv .itemDetailsGroup .show-focus:hover {background-color:transparent;transform: none;color:#00A4DC !important;}
 	.layout-tv .detailSection .detail-clamp-text {display: inline-block;}
 		/* Bouton Voir Plus */
-		.layout-tv .overview-expand {transform: none;-webkit-transform:none;border-radius: .3em;color:#8C8C8C;padding:.5em;}
+		.layout-tv .overview-expand {-webkit-transform:none;transform: none;border-radius: .3em;color:#8C8C8C;padding:.5em;}
 		.layout-tv .overview-expand:focus {background-color:rgba(0,255,255,0.10);color:#e2e2e2;transform:none;}
 	/* Mot Clés, Liens Externes*/
 	.itemTags, .itemExternalLinks {display:none;}
 	/* Distribution Cercles */
+	#castContent .cardBox {background: none;-webkit-box-shadow: none;-moz-box-shadow: none;box-shadow: none;}
 	#castContent .cardImageContainer.coveredImage.cardContent.itemAction.lazy.non-blurhashable.lazy-image-fadein-fast,
-	#castContent .cardImageContainer.coveredImage.defaultCardBackground.defaultCardBackground1.cardContent.itemAction {border-radius: 50%;}
+	#castContent .cardScalable .cardImageContainer {border-radius: 50%;}
 	#castContent .cardPadder.cardPadder-overflowPortrait.lazy-hidden-children, #castContent .cardPadder-mixedPortrait, #castContent .cardPadder-overflowPortrait, #castContent #castContent .cardPadder-portrait, #castContent .overflowPortraitCard-textCardPadder {border-radius: 50%;padding-bottom: 100%;}
 	#castContent .cardOverlayButton-br {bottom: 0;position: absolute;left: 38%;}
 	#castContent .cardOverlayContainer {border-radius: 50%;}
