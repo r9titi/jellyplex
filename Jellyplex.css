@@ -7,7 +7,8 @@ LAYOUT TV
 
 /*Général*/
 .layout-tv {font-family: 'Quicksand', sans-serif;font-size:122% !important;}
-.layout-tv .defaultCardBackground2, .layout-tv .defaultCardBackground3 {background: linear-gradient(141deg,#AA5CC3,#00A4DC);}
+.layout-tv .defaultCardBackground2, .layout-tv .defaultCardBackground3 {background: linear-gradient(141deg,#AA5CC3,#00A4DC)!important;}
+button{-webkit-border-fit:none !important;}
 /* Page Login*/
 .layout-tv .hideMainDrawer .backdropContainer {background: url('/Branding/Splashscreen?format=jpg&foregroundLayer=0.15');background-position: center;background-size: cover;filter: blur(10px);}
 .layout-tv .hideMainDrawer .backgroundContainer {background-color: rgba(0,0,0,0.60);}
@@ -19,8 +20,8 @@ LAYOUT TV
 #loginPage .emby-button.show-focus {background-color: rgba(0, 0, 0, 0.6);max-width:60%;margin-left:auto;margin-right:auto;margin-bottom:.5vw;border-radius:.3em;}
 #loginPage .emby-button.show-focus:focus {background-color: rgba(255, 255, 255, 1);transform: scale(1.02);color:#000;}
 	/* Effet affiches */
-	.layout-tv .card.show-animation:focus>.cardBox {-webkit-transform:scale(1.06);transform: scale(1.06);border:none;}
-	.layout-tv .card:focus .cardBox.visualCardBox, .card:focus .cardBox:not(.visualCardBox) .cardScalable {border:none;}
+	.layout-tv .card.show-animation:focus>.cardBox {-webkit-transform:scale(1.06);transform: scale(1.06);border:none !important;}
+	.layout-tv .card:focus .cardBox.visualCardBox, .card:focus .cardBox:not(.visualCardBox) .cardScalable {border:none !important;-webkit-border:none;}
 	.layout-tv .card:focus .cardBox.visualCardBox, .card:focus .cardBox:not(.visualCardBox) .cardScalable::after {content: '';position: absolute;top: 0; left: 0;right: 0; bottom: 0;background: rgba(255, 255, 255, 0.2);border-radius:.5em .5em 0 0;}
 	.layout-tv .cardBox {background-color: rgba(0, 0, 0, 0.4);border-radius:.5em;-webkit-box-shadow: 2px 4px 10px 0px rgba(0,0,0,0.3);-moz-box-shadow: 2px 4px 10px 0px rgba(0,0,0,0.3);box-shadow: 2px 4px 10px 0px rgba(0,0,0,0.5);}
 	.layout-tv .card .cardBox.visualCardBox, .layout-tv .card .cardBox:not(.visualCardBox) .cardScalable, .layout-tv .card .cardBox:not(.visualCardBox) .cardPadder, .layout-tv .cardScalable .cardImageContainer {border-radius: .5em .5em 0 0;}
@@ -129,7 +130,7 @@ LAYOUT TV
 	#castContent .cardOverlayButton-br {bottom: 0;position: absolute;left: 38%;}
 	#castContent .cardOverlayContainer {border-radius: 50%;}
 	#castContent > button > div > div.cardScalable > div.cardImageContainer.coveredImage.cardContent.lazy.non-blurhashable.lazy-image-fadein-fast {border-radius:50%;}
-	#castContent .personCard:focus .cardBox .cardScalable {border-radius:50%;filter:none;border:solid 3px white;}
+	#castContent .personCard:focus .cardBox .cardScalable {border-radius:50%;filter:none;border:solid 3px;border-color:#fff !important;}
 	#castContent .personCard:focus .cardBox .cardScalable::after {background: none;}
 
 /* Lecteur */
