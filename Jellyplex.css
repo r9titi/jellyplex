@@ -7,7 +7,7 @@ LAYOUT TV
 
 /*Général*/
 .layout-tv {font-family: 'Quicksand', sans-serif;font-size:122% !important;}
-.defaultCardBackground2, .defaultCardBackground3 {background: linear-gradient(141deg,#AA5CC3,#00A4DC);}
+.layout-tv .defaultCardBackground2, .layout-tv .defaultCardBackground3 {background: linear-gradient(141deg,#AA5CC3,#00A4DC);}
 /* Page Login*/
 .layout-tv .hideMainDrawer .backdropContainer {background: url('/Branding/Splashscreen?format=jpg&foregroundLayer=0.15');background-position: center;background-size: cover;filter: blur(10px);}
 .layout-tv .hideMainDrawer .backgroundContainer {background-color: rgba(0,0,0,0.60);}
@@ -129,7 +129,7 @@ LAYOUT TV
 	#castContent .cardOverlayButton-br {bottom: 0;position: absolute;left: 38%;}
 	#castContent .cardOverlayContainer {border-radius: 50%;}
 	#castContent > button > div > div.cardScalable > div.cardImageContainer.coveredImage.cardContent.lazy.non-blurhashable.lazy-image-fadein-fast {border-radius:50%;}
-	#castContent .personCard:focus .cardBox .cardScalable {border-radius:50%;filter:none;border:solid 2px #fff;}
+	#castContent .personCard:focus .cardBox .cardScalable {border-radius:50%;filter:none;border:solid 3px white;}
 	#castContent .personCard:focus .cardBox .cardScalable::after {background: none;}
 
 /* Lecteur */
