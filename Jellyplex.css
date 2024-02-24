@@ -7,7 +7,7 @@ LAYOUT TV
 
 /*Général*/
 .layout-tv {font-family: 'Quicksand', sans-serif;font-size:122% !important;}
-
+.defaultCardBackground2, .defaultCardBackground3 {background: linear-gradient(141deg,#AA5CC3,#00A4DC);}
 /* Page Login*/
 .layout-tv .hideMainDrawer .backdropContainer {background: url('/Branding/Splashscreen?format=jpg&foregroundLayer=0.15');background-position: center;background-size: cover;filter: blur(10px);}
 .layout-tv .hideMainDrawer .backgroundContainer {background-color: rgba(0,0,0,0.60);}
@@ -21,10 +21,12 @@ LAYOUT TV
 	/* Effet affiches */
 	.layout-tv .card.show-animation:focus>.cardBox {-webkit-transform:scale(1.06);transform: scale(1.06);border:none;}
 	.layout-tv .card:focus .cardBox.visualCardBox, .card:focus .cardBox:not(.visualCardBox) .cardScalable {border:none;}
-	.layout-tv .card:focus .cardBox.visualCardBox, .card:focus .cardBox:not(.visualCardBox) .cardScalable::after {content: '';position: absolute;top: 0; left: 0;right: 0; bottom: 0;background: rgba(255, 255, 255, 0.15);border-radius:.5em .5em 0 0;}
+	.layout-tv .card:focus .cardBox.visualCardBox, .card:focus .cardBox:not(.visualCardBox) .cardScalable::after {content: '';position: absolute;top: 0; left: 0;right: 0; bottom: 0;background: rgba(255, 255, 255, 0.2);border-radius:.5em .5em 0 0;}
 	.layout-tv .cardBox {background-color: rgba(0, 0, 0, 0.4);border-radius:.5em;-webkit-box-shadow: 2px 4px 10px 0px rgba(0,0,0,0.3);-moz-box-shadow: 2px 4px 10px 0px rgba(0,0,0,0.3);box-shadow: 2px 4px 10px 0px rgba(0,0,0,0.5);}
 	.layout-tv .card .cardBox.visualCardBox, .layout-tv .card .cardBox:not(.visualCardBox) .cardScalable, .layout-tv .card .cardBox:not(.visualCardBox) .cardPadder, .layout-tv .cardScalable .cardImageContainer {border-radius: .5em .5em 0 0;}
 	.layout-tv .cardText-secondary {padding-bottom: 10px;}
+	/* Effet Menu & Aperçu */
+	.layout-tv .section0 .card:focus .cardBox.visualCardBox, .section0 .card:focus .cardBox:not(.visualCardBox) .cardScalable::after {content: '';position: absolute;top: 0; left: 0;right: 0; bottom: 0;background: rgba(255, 255, 255, 0.15);border-radius:.5em;}
 	/* Couleur hover & focus */
 	.layout-tv .emby-tab-button.show-focus:hover, .layout-tv .emby-tab-button.show-focus:focus, .layout-tv .paper-icon-button-light:hover:not(:disabled), .layout-tv .paper-icon-button-light:focus:not(:disabled) {background: none;}
 	/* Top Menu */
@@ -50,11 +52,18 @@ LAYOUT TV
 	.layout-tv .nextUpSection .itemsContainer-tv>.overflowBackdropCard {width:20vw;}
 	.layout-tv .nextUpSection .cardBox {background: none;border-radius:.5em;-webkit-box-shadow: none;-moz-box-shadow: none;box-shadow: none;}
 	.layout-tv .nextUpSection .card .cardBox.visualCardBox, .layout-tv .nextUpSection .card .cardBox:not(.visualCardBox) .cardScalable, .layout-tv .nextUpSection .card .cardBox:not(.visualCardBox) .cardPadder, .layout-tv .nextUpSection .cardScalable .cardImageContainer {border-radius: .5em;}
+	.layout-tv .nextUpSection .card:focus .cardBox.visualCardBox, .nextUpSection .card:focus .cardBox:not(.visualCardBox) .cardScalable::after {content: '';position: absolute;top: 0; left: 0;right: 0; bottom: 0;background: rgba(255, 255, 255, 0.2);border-radius:.5em;}
+	/* Plus De Saison */
+	.layout-tv .moreFromSeasonSection .itemsContainer-tv>.overflowBackdropCard {width:20vw;}
+	.layout-tv .moreFromSeasonSection .cardBox {background: none;border-radius:.5em;-webkit-box-shadow: none;-moz-box-shadow: none;box-shadow: none;}
+	.layout-tv .moreFromSeasonSection .card .cardBox.visualCardBox, .layout-tv .moreFromSeasonSection .card .cardBox:not(.visualCardBox) .cardScalable, .layout-tv .moreFromSeasonSection .card .cardBox:not(.visualCardBox) .cardPadder, .layout-tv .moreFromSeasonSection .cardScalable .cardImageContainer {border-radius: .5em;}
+	.layout-tv .moreFromSeasonSection .card:focus .cardBox.visualCardBox, .moreFromSeasonSection .card:focus .cardBox:not(.visualCardBox) .cardScalable::after {content: '';position: absolute;top: 0; left: 0;right: 0; bottom: 0;background: rgba(255, 255, 255, 0.2);border-radius:.5em;}
 	/* Saisons */
 	.layout-tv #childrenCollapsible .cardText {padding-bottom: 10px;}
 	/* Episodes */
 	.layout-tv #childrenCollapsible .listItem {background-color: rgba(0, 0, 0, 0.6);border-radius: .3em;margin-bottom: 1vw;}
 	.layout-tv #childrenCollapsible .listItem:focus {background-color: rgba(0, 0, 0, 0.2);color:#e2e2e2;font-weight:400;}
+	.layout-tv #childrenCollapsible .listItem:focus .listItemImage::after {content: '';position: absolute;top: 0; left: 0;right: 0; bottom: 0;background: rgba(255, 255, 255, 0.2)}
 	.layout-tv .listItemImage-large-tv {height:13vw !important;}
 	.layout-tv #childrenCollapsible .mediaInfoItem {padding-top:1vw;}
 	.layout-tv #childrenCollapsible .starRatingContainer {padding-top:0;}
@@ -89,14 +98,14 @@ LAYOUT TV
 		.layout-tv .btnPlay:hover, .layout-tv .btnPlay:focus {;transform: scale(1.2) !important;}
 		.layout-tv .btnPlay::after {content : attr(title);margin: 0 10px 0 2px;color: #151515 !important;font-weight:600 !important;}
 		.layout-tv .btnPlay.detailButton {flex-direction: row;}
-	/* Selection Audio & Sous-titres */
+	/* Selection Version & Audio & Sous-titres */
 	.layout-tv .detailPageContent {padding-left: 4vw;margin-top:2vw;}
 	.layout-tv .trackSelections {margin-bottom:3vw;}
 	.layout-tv .trackSelections .selectContainer .selectLabel {display: none;}
 	.layout-tv .trackSelections .selectArrowContainer {color:#00A4DC;top:.5em;}
 	.layout-tv .detailTrackSelect {background: none;border: none;color:#00A4DC;}
 	.layout-tv .trackSelections .trackSelectionFieldContainer {background-color:rgba(255,255,255,0.10);border-radius:.3em;padding:.5em;display:inline-block;max-width:30%;font-size:90%;}
-	.layout-tv .trackSelections .selectContainer .selectAudio, .layout-tv .trackSelections .selectContainer .selectSubtitles {max-width:90%;}
+	.layout-tv .trackSelections .selectContainer .selectAudio, .layout-tv .trackSelections .selectContainer .selectSubtitles, .layout-tv .trackSelections .selectContainer .selectSource {max-width:90%;}
 	.layout-tv .trackSelections .trackSelectionFieldContainer:focus-within {background:rgba(255,255,255,0.20);}
 	.layout-tv .trackSelections .selectContainer .detailTrackSelect:focus {color: #e2e2e2 !important;-webkit-transform:none;transform:none;}
 		/* Liste Actions */
@@ -120,8 +129,10 @@ LAYOUT TV
 	#castContent .cardOverlayButton-br {bottom: 0;position: absolute;left: 38%;}
 	#castContent .cardOverlayContainer {border-radius: 50%;}
 	#castContent > button > div > div.cardScalable > div.cardImageContainer.coveredImage.cardContent.lazy.non-blurhashable.lazy-image-fadein-fast {border-radius:50%;}
-	#castContent .personCard:focus .cardBox .cardScalable {border-radius:50%;filter:none;}
+	#castContent .personCard:focus .cardBox .cardScalable {border-radius:50%;filter:none;border:solid 2px #fff;}
+	#castContent .personCard:focus .cardBox .cardScalable::after {background: none;}
 
 /* Lecteur */
 .layout-tv .sliderBubble {border-radius:.3em;background:rgba(0,0,0,0.40);}
+
 	
