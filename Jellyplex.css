@@ -130,7 +130,7 @@ button{-webkit-border-fit:none !important;}
 	#castContent .cardOverlayButton-br {bottom: 0;position: absolute;left: 38%;}
 	#castContent .cardOverlayContainer {border-radius: 50%;}
 	#castContent > button > div > div.cardScalable > div.cardImageContainer.coveredImage.cardContent.lazy.non-blurhashable.lazy-image-fadein-fast {border-radius:50%;}
-	#castContent .personCard:focus .cardBox .cardScalable {border-radius:50%;filter:none;border:solid 3px;border-color:#fff !important;}
+	#castContent .personCard:focus .cardBox .cardScalable {border-radius:50%;filter:none;border:solid 3px #fff !important; border-color: #fff !important;}
 	#castContent .personCard:focus .cardBox .cardScalable::after {background: none;}
 
 /* Lecteur */
