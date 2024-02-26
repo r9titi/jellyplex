@@ -69,7 +69,8 @@ LAYOUT TV
 	.layout-tv #childrenCollapsible .starRatingContainer {padding-top:0;}
 	.layout-tv #childrenCollapsible .listItem .secondary {text-align: justify;}
 
-/* Page Media */
+/* Page Films */
+.layout-tv #moviesPage .alphaPicker-fixed.alphaPicker-tv {padding-top:6.7em;top:4em;}
 .layout-tv .detailImageContainer .card .cardBox {display:none;}
 .layout-tv .detailPagePrimaryContainer {padding-left: 4vw;margin-top:2vw;}
 	/* Backdrop */
@@ -134,5 +135,10 @@ LAYOUT TV
 
 /* Lecteur */
 .layout-tv .sliderBubble {border-radius:.3em;background:rgba(0,0,0,0.40);}
-
+	/* Episode Suivant */
+	.layout-tv .upNextContainer {right:2%;border-radius:.3em;}
+	.layout-tv .upNextContainer h2.upNextDialog-nextVideoText {font-size:1.4em;}
+	.layout-tv .upNextContainer .endsAt {padding-top:0;}
+	.layout-tv .upNextContainer .emby-button {border-radius:3em;}
+	.layout-tv .upNextContainer .emby-button:focus {background:#fff;color:#000;transform:none}
 	
