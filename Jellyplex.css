@@ -6,8 +6,8 @@ LAYOUT TV
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 /*Général*/
-.layout-tv {font-family: 'Quicksand', sans-serif;font-size:122% !important;}
-.layout-tv .defaultCardBackground, #loginPage .defaultCardBackground {background: linear-gradient(141deg,#AA5CC3,#00A4DC)!important;}
+.layout-tv {font-family: 'Quicksand', sans-serif;font-size:123% !important;}
+.defaultCardBackground, #loginPage .defaultCardBackground {background: linear-gradient(141deg,#AA5CC3,#00A4DC)!important;}
 /* Page Login*/
 .layout-tv .hideMainDrawer .backdropContainer {background: url('/Branding/Splashscreen?format=jpg&foregroundLayer=0.15');background-position: center;background-size: cover;filter: blur(10px);}
 .layout-tv .hideMainDrawer .backgroundContainer {background-color: rgba(0,0,0,0.60);}
