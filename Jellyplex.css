@@ -7,7 +7,7 @@ LAYOUT TV
 
 /*Général*/
 .layout-tv {font-family: 'Quicksand', sans-serif;font-size:122% !important;}
-.layout-tv .defaultCardBackground2, .layout-tv .defaultCardBackground3 {background: linear-gradient(141deg,#AA5CC3,#00A4DC)!important;}
+.layout-tv .defaultCardBackground, #loginPage .defaultCardBackground {background: linear-gradient(141deg,#AA5CC3,#00A4DC)!important;}
 /* Page Login*/
 .layout-tv .hideMainDrawer .backdropContainer {background: url('/Branding/Splashscreen?format=jpg&foregroundLayer=0.15');background-position: center;background-size: cover;filter: blur(10px);}
 .layout-tv .hideMainDrawer .backgroundContainer {background-color: rgba(0,0,0,0.60);}
@@ -29,6 +29,7 @@ LAYOUT TV
 	.layout-tv .section0 .card:focus .cardBox.visualCardBox, .section0 .card:focus .cardBox:not(.visualCardBox) .cardScalable::after {content: '';position: absolute;top: 0; left: 0;right: 0; bottom: 0;background: rgba(255, 255, 255, 0.15);border-radius:.5em;}
 	/* Couleur hover & focus */
 	.layout-tv .emby-tab-button.show-focus:hover, .layout-tv .emby-tab-button.show-focus:focus, .layout-tv .paper-icon-button-light:hover:not(:disabled), .layout-tv .paper-icon-button-light:focus:not(:disabled) {background: none;}
+	.layout-tv .dialog .emby-button.show-focus:focus {color:#000;background: #fff;}
 	/* Top Menu */
 	.layout-tv .skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred {background: none;background-color: rgba(0, 0, 0, 0);}
 
@@ -109,8 +110,7 @@ LAYOUT TV
 	.layout-tv .trackSelections .selectContainer .selectAudio, .layout-tv .trackSelections .selectContainer .selectSubtitles, .layout-tv .trackSelections .selectContainer .selectSource {max-width:90%;}
 	.layout-tv .trackSelections .trackSelectionFieldContainer:focus-within {background:rgba(255,255,255,0.20);}
 	.layout-tv .trackSelections .selectContainer .detailTrackSelect:focus {color: #e2e2e2 !important;-webkit-transform:none;transform:none;}
-		/* Liste Actions */
-		.layout-tv .listItem-button:focus{background-color: #00A4DC;color:#000;font-weight:600;}	
+
 	/* Synopsis & Infos */
 	.layout-tv .detailSection {padding-bottom:4vw;}
 	.layout-tv .detailSectionContent {color:#fff;text-align:justify;width:60%;margin-bottom: 2vw;}
