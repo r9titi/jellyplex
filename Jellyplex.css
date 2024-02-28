@@ -34,7 +34,7 @@ LAYOUT TV
 	.layout-tv .skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred {background: none;background-color: rgba(0, 0, 0, 0);}
 
 /* Accueil */
-.layout-tv .withSectionTabs .backdropImage {filter: blur(10px);}
+.layout-tv .withSectionTabs .backdropImage {filter: blur(20px);}
 .layout-tv .withSectionTabs .backgroundContainer {background:none;background-color:rgba(0,0,0,.8);}
 	/* Mes Medias */
 	.layout-tv .section0 .itemsContainer-tv>.overflowBackdropCard {width:20vw;}
