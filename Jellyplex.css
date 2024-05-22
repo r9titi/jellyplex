@@ -72,6 +72,7 @@ LAYOUT TV
 .layout-tv #moviesPage .alphaPicker-fixed.alphaPicker-tv {padding-top:6.7em;top:4em;}
 .layout-tv .detailImageContainer .card .cardBox {display:none;}
 .layout-tv .detailPagePrimaryContainer {padding-left: 4vw !important;margin-top:2vw;}
+.layout-tv [dir=ltr] .detailPagePrimaryContainer {padding-left: 4vw !important;}
 	/* Backdrop */
 	.layout-tv .withBackdrop {background:url(https://r9titi.github.io/jellyplex/img/mask.png);background-size: cover;width: 100%;height: 100%;}
 	/* Titres */
