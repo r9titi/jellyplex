@@ -6,7 +6,7 @@ LAYOUT TV
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 /*Général*/
-.material-icons {font-family: 'Material Icons Rounded' !Important;}
+.material-icons {font-family: 'Material Icons Round' !Important;}
 .layout-tv {font-family: 'Quicksand', sans-serif;font-size:124% !important;}
 .defaultCardBackground, #loginPage .defaultCardBackground {background: linear-gradient(141deg,#AA5CC3,#00A4DC)!important;}
 /* Page Login*/
