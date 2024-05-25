@@ -32,12 +32,13 @@ LAYOUT TV
 	/* Top Menu */
 	.layout-tv .skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred {background: none;background-color: rgba(0, 0, 0, 0);}
 /* Accueil */
-.layout-tv .withSectionTabs .backdropImage {filter: blur(20px);background-size:100% !important;}
-.layout-tv .withSectionTabs .withBackdrop {background:none;background-color:rgba(0,0,0,.8);mask:none;-webkit-mask:none;backdrop-filter:none;}
+.layout-tv .withSectionTabs .backdropImage {filter: blur(10px);background-size:100% !important;}
+.layout-tv .withSectionTabs .withBackdrop {background:none;background-color:rgba(0,0,0,.6);mask:none;-webkit-mask:none;backdrop-filter:none;}
 	/* Mes Medias */
 	.layout-tv .section0 .itemsContainer-tv>.overflowBackdropCard {width:20vw;}
-	.layout-tv .section0 .cardBox {background: none;border-radius:.5em;-webkit-box-shadow: none;-moz-box-shadow: none;box-shadow: none;}
+	.layout-tv .section0 .cardBox {background: none;border-radius:.5em;-webkit-box-shadow: none;-moz-box-shadow: none;box-shadow: none;margin-bottom:7vw !important;}
 	.layout-tv .section0 .card .cardBox.visualCardBox, .layout-tv .section0 .card .cardBox:not(.visualCardBox) .cardScalable, .layout-tv .section0 .card .cardBox:not(.visualCardBox) .cardPadder, .layout-tv .section0 .cardScalable .cardImageContainer {border-radius: .5em;}
+	.layout-tv .section0 .cardBox .cardText {display:none;}
 
 /* Page Sagas */
 .layout-tv .detailPagePrimaryContent .detailSection {padding-bottom:3vw;}
@@ -75,7 +76,7 @@ LAYOUT TV
 .layout-tv [dir=ltr] .detailPagePrimaryContainer {padding-left: 4vw !important;}
 	/* Image Fond & Backdrop */
 	.layout-tv .backdropImage {background-position: top right;background-repeat: repeat;background-size: 75% !important;}
-	.layout-tv .withBackdrop {background-color: rgba(0,0,0,.7);background-size: cover;width: 100%;height: 100%;mask-image:radial-gradient(ellipse at top right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 53%);backdrop-filter:blur(80px);-webkit-mask-image:radial-gradient(ellipse at top right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 53%);}
+	.layout-tv .withBackdrop {background-color: rgba(0,0,0,.7);background-size: cover;width: 100%;height: 100%;mask-image:radial-gradient(ellipse at top right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 53%);backdrop-filter:blur(120px);-webkit-mask-image:radial-gradient(ellipse at top right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 53%);}
 	/* Titres */
 	.itemName.parentNameLast.withOriginalTitle {color:#fff;text-transform: capitalize;}
 	.itemName.originalTitle {font-style:italic;font-weight:200;}
