@@ -32,13 +32,14 @@ LAYOUT TV
 	/* Top Menu */
 	.layout-tv .skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred {background: none;background-color: rgba(0, 0, 0, 0);}
 /* Accueil */
-.layout-tv .withSectionTabs .backdropImage {filter: blur(10px);background-size:100% !important;}
-.layout-tv .withSectionTabs .withBackdrop {background:none;background-color:rgba(0,0,0,.6);mask:none;-webkit-mask:none;backdrop-filter:none;}
+.layout-tv .withSectionTabs .backdropImage {filter: blur(15px);background-size:100% !important;}
+.layout-tv .withSectionTabs .withBackdrop {background:none;background-color:rgba(0,0,0,.7);mask:none;-webkit-mask:none;backdrop-filter:none;}
 	/* Mes Medias */
 	.layout-tv .section0 .itemsContainer-tv>.overflowBackdropCard {width:20vw;}
 	.layout-tv .section0 .cardBox {background: none;border-radius:.5em;-webkit-box-shadow: none;-moz-box-shadow: none;box-shadow: none;margin-bottom:7vw !important;}
 	.layout-tv .section0 .card .cardBox.visualCardBox, .layout-tv .section0 .card .cardBox:not(.visualCardBox) .cardScalable, .layout-tv .section0 .card .cardBox:not(.visualCardBox) .cardPadder, .layout-tv .section0 .cardScalable .cardImageContainer {border-radius: .5em;}
 	.layout-tv .section0 .cardBox .cardText {display:none;}
+	.layout-tv .section0 .card.show-animation:focus>.cardBox {transform: scale(1.08);border:solid 3px rgba(255,255,255,0.5) !important;-webkit-transform:scale(1.08)}
 
 /* Page Sagas */
 .layout-tv .detailPagePrimaryContent .detailSection {padding-bottom:3vw;}
