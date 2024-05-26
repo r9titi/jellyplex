@@ -9,8 +9,8 @@ LAYOUT TV
 .layout-tv {font-family: 'Quicksand', sans-serif;font-size:124% !important;}
 .defaultCardBackground, #loginPage .defaultCardBackground {background: linear-gradient(141deg,#AA5CC3,#00A4DC)!important;}
 /* Page Login*/
-.layout-tv .hideMainDrawer .backdropContainer {background: url('/Branding/Splashscreen?format=jpg&foregroundLayer=0.15');background-position: center;background-size: cover;filter: blur(10px);}
-.layout-tv .hideMainDrawer .backgroundContainer {background-color: rgba(0,0,0,0.60);}
+#loginPage .hideMainDrawer .backdropContainer {background: url('/Branding/Splashscreen?format=jpg&foregroundLayer=0.15');background-position: center;background-size: cover;filter: blur(10px);}
+#loginPage .hideMainDrawer .backgroundContainer {background-color: rgba(0,0,0,0.60);}
 #loginPage .cardBox {background-color: rgba(0, 0, 0, 0.6);border-radius:.3em;}
 #loginPage .cardScalable {padding:3% 3% 5% 3%;background-color: rgba(0, 0, 0, 0.4);}
 #loginPage .cardPadder {border-radius:.3em .3em 0 0;}
