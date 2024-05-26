@@ -9,8 +9,8 @@ LAYOUT TV
 .layout-tv {font-family: 'Quicksand', sans-serif;font-size:124% !important;}
 .defaultCardBackground, #loginPage .defaultCardBackground {background: linear-gradient(141deg,#AA5CC3,#00A4DC)!important;}
 /* Page Login*/
-#loginPage .hideMainDrawer .backdropContainer {background: url('/Branding/Splashscreen?format=jpg&foregroundLayer=0.15');background-position: center;background-size: cover;filter: blur(10px);}
-#loginPage .hideMainDrawer .backgroundContainer {background-color: rgba(0,0,0,0.60);}
+.layout-tv .hideMainDrawer .backdropContainer {background: url('/Branding/Splashscreen?format=jpg&foregroundLayer=0.15');background-position: center;background-size: cover;filter: blur(10px);}
+.layout-tv .hideMainDrawer .backgroundContainer {background-color: rgba(0,0,0,0.60);}
 #loginPage .cardBox {background-color: rgba(0, 0, 0, 0.6);border-radius:.3em;}
 #loginPage .cardScalable {padding:3% 3% 5% 3%;background-color: rgba(0, 0, 0, 0.4);}
 #loginPage .cardPadder {border-radius:.3em .3em 0 0;}
@@ -77,7 +77,7 @@ LAYOUT TV
 .layout-tv [dir=ltr] .detailPagePrimaryContainer {padding-left: 4vw !important;}
 	/* Image Fond & Backdrop */
 	.layout-tv .backdropImage {background-position: top right;background-repeat: repeat;background-size: 75% !important;}
-	.layout-tv .withBackdrop {background-color: rgba(0,0,0,.7);background-size: cover;width: 100%;height: 100%;mask-image:radial-gradient(ellipse at top right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 53%);backdrop-filter:blur(120px);}
+	.layout-tv .withBackdrop {background-color: rgba(0,0,0,.7);background-size: cover;width: 100%;height: 100%;mask-image:url("https://cdn.jsdelivr.net/gh/r9titi/jellyplex@main/img/mask.png");backdrop-filter:blur(120px);}
 	/* Titres */
 	.itemName.parentNameLast.withOriginalTitle {color:#fff;text-transform: capitalize;}
 	.itemName.originalTitle {font-style:italic;font-weight:200;}
