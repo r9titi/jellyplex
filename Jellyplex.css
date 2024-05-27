@@ -9,7 +9,7 @@ LAYOUT TV
 .layout-tv {font-family: 'Quicksand', sans-serif;font-size:124% !important;}
 .defaultCardBackground, #loginPage .defaultCardBackground {background: linear-gradient(141deg,#AA5CC3,#00A4DC)!important;}
 /* Page Login*/
-.layout-tv .hideMainDrawer .backdropContainer {background: url('/Branding/Splashscreen?format=jpg&foregroundLayer=0.15');background-position: center;background-size: cover;filter: blur(10px);}
+#loginpage {background: url('/Branding/Splashscreen?format=jpg&foregroundLayer=0.15');background-position: center;background-size: cover;filter: blur(10px);}
 .layout-tv .hideMainDrawer .backgroundContainer {background-color: rgba(0,0,0,0.60);}
 #loginPage .cardBox {background-color: rgba(0, 0, 0, 0.6);border-radius:.3em;}
 #loginPage .cardScalable {padding:3% 3% 5% 3%;background-color: rgba(0, 0, 0, 0.4);}
@@ -39,7 +39,8 @@ LAYOUT TV
 	.layout-tv .section0 .cardBox {background: none;border-radius:.5em;-webkit-box-shadow: none;-moz-box-shadow: none;box-shadow: none;margin-bottom:7vw !important;}
 	.layout-tv .section0 .card .cardBox.visualCardBox, .layout-tv .section0 .card .cardBox:not(.visualCardBox) .cardScalable, .layout-tv .section0 .card .cardBox:not(.visualCardBox) .cardPadder, .layout-tv .section0 .cardScalable .cardImageContainer {border-radius: .5em;}
 	.layout-tv .section0 .cardBox .cardText {display:none;}
-	.layout-tv .section0 .card.show-animation:focus>.cardBox {transform: scale(1.08);border:solid 3px rgba(255,255,255,0.5) !important;-webkit-transform:scale(1.08)}
+	.layout-tv .section0 .card.show-animation .cardBox {filter: saturate(0.2)}
+	.layout-tv .section0 .card.show-animation:focus>.cardBox {transform: scale(1.08);border:solid 3px rgba(255,255,255,1) !important;-webkit-transform:scale(1.08);filter:saturate(2);}
 
 /* Page Sagas */
 .layout-tv .detailPagePrimaryContent .detailSection {padding-bottom:3vw;}
@@ -76,8 +77,8 @@ LAYOUT TV
 .layout-tv .detailPagePrimaryContainer {padding-left: 4vw !important;margin-top:2vw;}
 .layout-tv [dir=ltr] .detailPagePrimaryContainer {padding-left: 4vw !important;}
 	/* Image Fond & Backdrop */
-	.layout-tv .backdropImage {background-position: top right;background-repeat: repeat;background-size: 75% !important;}
-	.layout-tv .withBackdrop {background-color: rgba(0,0,0,.7);background-size: cover;width: 100%;height: 100%;mask-image:url("https://cdn.jsdelivr.net/gh/r9titi/jellyplex@main/img/mask-blur.png");backdrop-filter:blur(120px);}
+	.layout-tv .backdropImage {background-position: top right;background-repeat: repeat;background-size: 65% !important;}
+	.layout-tv .withBackdrop {background-color: rgba(0,0,0,.7);background-size: cover;width: 100%;height: 100%;mask-image:url("https://cdn.jsdelivr.net/gh/r9titi/jellyplex@main/img/mask-blur.png");backdrop-filter:blur(100px);}
 	/* Titres */
 	.itemName.parentNameLast.withOriginalTitle {color:#fff;text-transform: capitalize;}
 	.itemName.originalTitle {font-style:italic;font-weight:200;}
