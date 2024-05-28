@@ -30,13 +30,17 @@ LAYOUT TV
 	/* Couleur hover & focus */
 	.layout-tv .dialog .emby-button.show-focus:focus {color:#000;background: #fff;}
 	/* Top Menu */
-	.layout-tv .skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred {background: none;background-color: rgba(0, 0, 0, 0);}
+	.layout-tv .skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred {background: none;background-color: rgba(0, 0, 0, 0.7);}
+	.layout-tv .withSectionTabs .noHomeButtonHeader {background: none;background-color: rgba(0, 0, 0, 0.7);width: 60%;margin-left: 20%;border-radius: 3em;margin-top: 2em;backdrop-filter:blur(10px);}
 /* Accueil */
-.layout-tv .withSectionTabs .backdropImage {filter: blur(15px);background-size:100% !important;}
-.layout-tv .withSectionTabs .withBackdrop {background:none;background-color:rgba(0,0,0,.7);mask:none;-webkit-mask:none;backdrop-filter:none;}
+.layout-tv .homeSectionsContainer {margin-top:33%;backdrop-filter:blur(20px);}
+.layout-tv .withSectionTabs .backdropImage {background-color:transparent;background-size:100% !important;}
+.layout-tv .withSectionTabs .withBackdrop {background:none;mask:none;-webkit-mask:none;backdrop-filter:none;}
 	/* Mes Medias */
+	.layout-tv .section0 {margin-bottom:7vw !important;background-color: rgba(0,0,0,.7);box-shadow: 2px 4px 10px 0px rgba(0,0,0,0.3);}
+	.layout-tv .section0 h2 {display:none;}
 	.layout-tv .section0 .itemsContainer-tv>.overflowBackdropCard {width:20vw;}
-	.layout-tv .section0 .cardBox {background: none;border-radius:.5em;-webkit-box-shadow: none;-moz-box-shadow: none;box-shadow: none;margin-bottom:7vw !important;}
+	.layout-tv .section0 .cardBox {background: none;border-radius:.5em;-webkit-box-shadow: none;-moz-box-shadow: none;box-shadow: none;}
 	.layout-tv .section0 .card .cardBox.visualCardBox, .layout-tv .section0 .card .cardBox:not(.visualCardBox) .cardScalable, .layout-tv .section0 .card .cardBox:not(.visualCardBox) .cardPadder, .layout-tv .section0 .cardScalable .cardImageContainer {border-radius: .5em;}
 	.layout-tv .section0 .cardBox .cardText {display:none;}
 	.layout-tv .section0 .card.show-animation .cardBox {filter: saturate(0.2)}
@@ -72,6 +76,7 @@ LAYOUT TV
 	.layout-tv #childrenCollapsible .listItem .secondary {text-align: justify;}
 
 /* Page Films */
+.layout-tv #moviesPage {backdrop-filter:blur(20px);}
 .layout-tv #moviesPage .alphaPicker-fixed.alphaPicker-tv {padding-top:6.7em;top:4em;}
 .layout-tv .detailImageContainer .card .cardBox {display:none;}
 .layout-tv .detailPagePrimaryContainer {padding-left: 4vw !important;margin-top:2vw;}
