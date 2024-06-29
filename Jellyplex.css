@@ -15,7 +15,7 @@ LAYOUT TV
 }
 
 /*Général*/
-.layout-tv {font-family: 'Quicksand', sans-serif;}
+.layout-tv {font-family: 'Quicksand', sans-serif;font-size:124% !important}
 .layout-tv h2 {font-size:1.3em !important;}
 .layout-tv .sectionTitle {color:#fff;margin-bottom:.4em !important;}
 .layout-tv .sectionTitle:after {font-family: 'Material Symbols Rounded' !important; content:"\e5cc";font-weight:100;position :absolute;line-height:1.6em;}
