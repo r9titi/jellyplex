@@ -12,11 +12,14 @@ LAYOUT TV
 	--shadowing: 0px 1px 2px 0px rgba(0,0,0,0.4);
 	--shadowing-focus: 0px 5px 15px 5px rgba(0,0,0,0.4);
 	--border-radius-buttons: .3em;
+	--border-radius-command-buttons: 3em;
+	--border-radius-play-button: 50%;
 }
 
 /*Général*/
-.layout-tv {font-family: 'Quicksand', sans-serif;font-size:124% !important}
+.layout-tv {font-family: 'Quicksand', sans-serif;font-size:124% !important;}
 .layout-tv h2 {font-size:1.3em !important;}
+.layout-tv .homeSectionsContainer h2.sectionTitle {font-size:1.1em !important;text-transform:uppercase;}
 .layout-tv .sectionTitle {color:#fff;margin-bottom:.4em !important;}
 .layout-tv .sectionTitle:after {font-family: 'Material Symbols Rounded' !important; content:"\e5cc";font-weight:100;position :absolute;line-height:1.6em;}
 .defaultCardBackground, #loginPage .defaultCardBackground {background: linear-gradient(141deg,#AA5CC3,#00A4DC)!important;}
@@ -24,7 +27,7 @@ LAYOUT TV
 
 /* Top Menu */
 .layout-tv .pageWithAbsoluteTabs:not(.noSecondaryNavPage) {padding-top:6vw !important;}
-.layout-tv .skinHeader, .layout-tv .skinHeader.semiTransparent {background:linear-gradient(to bottom, rgba(0,0,0,.8), transparent);box-shadow:none;}
+.layout-tv .skinHeader, .layout-tv .skinHeader.semiTransparent {background:linear-gradient(to bottom, rgba(0,0,0,.5), transparent);box-shadow:none;}
 .layout-tv .skinHeader .emby-tab-button.show-focus:focus {color:#fff;}
 .layout-tv .material-icons.arrow_back:before {content:"\e5e0";font-weight:200;font-family: 'Material Symbols Rounded' !important;}
 /* Accueil */
@@ -34,8 +37,8 @@ LAYOUT TV
 	.layout-tv .section0 {margin:0 0 2vw 0;}
 	.layout-tv .section0 .itemsContainer {padding-left:1.4vw !important;}
 	.layout-tv .section0 .sectionTitle {display:none;}
-	.layout-tv .section0 .raised {background: none;font-weight:100;font-size:1.2em;min-width:0;color:rgba(255, 255, 255, 0.27);border-bottom:solid 2px transparent;border-radius:0;}
-	.layout-tv .section0 .raised:hover, .layout-tv .section0 .raised:focus {color:rgba(255, 255, 255, 0.87);border-color:#fff;transform: scale(1) !important;}
+	.layout-tv .section0 .raised {background: none;font-weight:100;font-size:1.4em;min-width:0;color:rgba(255, 255, 255, 0.4);border-radius:0;}
+	.layout-tv .section0 .raised:hover, .layout-tv .section0 .raised:focus {color:rgba(255, 255, 255, 0.87);transform: scale(1.1) !important;}
 	.layout-tv .section0 .homeLibraryIcon {display:none;}
 /* Page Login*/
 #loginpage {background: url('/Branding/Splashscreen?format=jpg&foregroundLayer=0.15');background-position: center;background-size: cover;filter: blur(10px);}
@@ -109,7 +112,7 @@ LAYOUT TV
 /* Page Film */
 	/* Image Fond & Backdrop */
 	.layout-tv .backdropImage {background-repeat: no-repeat;background-size: 100%;}
-	.layout-tv .withBackdrop {background-size: cover;background-size: 100%;background: linear-gradient(to top, rgba(0,0,0,1) 15%, transparent);background-image:url("https://cdn.jsdelivr.net/gh/r9titi/jellyplex@main/img/mask-backdrop.png")}
+	.layout-tv .withBackdrop {background-size: cover;background-size: 100%;background: linear-gradient(to top, rgba(0,0,0,1) 15%, transparent);background-image:url("https://cdn.jsdelivr.net/gh/r9titi/jellyplex@main/img/backdrop.png")}
 	/* Infos Bloc */
 	.layout-tv .detailPageWrapperContainer {margin-top:3vw;}
 	/* Logo & Titres */
@@ -127,18 +130,18 @@ LAYOUT TV
 	.layout-tv .mediaInfoCriticRating {background-color: rgba(0,0,0,.5);padding:2px 5px 2px 35px;border-radius:var(--border-radius-buttons);color:#e2e2e2;}
 	/* Boutons */
 	.layout-tv .mainDetailButtons {margin: 1.5em 0 0 0 !important;}
-	.layout-tv .detailButton {border-radius:var(--border-radius-buttons);margin:.7% !important;flex-direction: row;color: #b8b8b8;}
+	.layout-tv .detailButton {border-radius:var(--border-radius-command-buttons);margin:.7% !important;flex-direction: row;color: #b8b8b8;}
 	.layout-tv .detailButton:focus:after {content : attr(title);color: #151515;}
-	.layout-tv .detailButton:focus, .layout-tv .detailButton:hover {background-color:rgba(255,255,255,1) !important;transform: scale(1) !important;border-radius:var(--border-radius-buttons) !important;color:#151515;transition: margin-left 1s;}
+	.layout-tv .detailButton:focus, .layout-tv .detailButton:hover {background-color:rgba(255,255,255,1) !important;transform: scale(1) !important;border-radius:var(--border-radius-command-buttons) !important;color:#151515;transition: margin-left 1s;}
 	.layout-tv .mainDetailButtons {margin-top: 1.5em; font-size:100%;flex-wrap: wrap;}
 	.layout-tv .listViewUserDataButtons {display: none;}
 	.layout-tv .detailButton-content {margin:3px;}
 		/* Lecture */
-		.layout-tv .btnPlay {border-radius:var(--border-radius-buttons);color:#151515;font-size:1em;background:none;margin-right:2vw !important;width:18%;font-weight: 300;background-color:#fff;margin-left:0 !important;}
+		.layout-tv .btnPlay {border-radius:var(--border-radius-play-button);color:#151515;font-size:1em;background:none;margin-right:1vw !important;font-weight: 300;background-color:#fff;margin-left:0 !important;transform: scale(1.2) !important}
 		.layout-tv .btnPlay .play_arrow {color:#151515;}
-		.layout-tv .btnPlay::after {content: attr(title);color:#151515 !important;font-weight: 600 !important;font-size:1.2em;line-height:1em;}
+		.layout-tv .btnPlay::after {content: "" !important;color:#151515 !important;font-weight: 600 !important;font-size:1.2em;line-height:1em;}
 		.layout-tv .btnPlay:after:focus, .layout-tv .btnPlay:after:hover {color:#151515 !important;}
-		.layout-tv .btnPlay:hover, .layout-tv .btnPlay:focus {border-radius: var(--border-radius-buttons) !important;transform: scale(1.1) !important;background-color:#fff !important;font-weight: 300 !important;color:#151515 !important;}
+		.layout-tv .btnPlay:hover, .layout-tv .btnPlay:focus {border-radius: var(--border-radius-play-button) !important;transform: scale(1.4) !important;background-color:#fff !important;font-weight: 300 !important;color:#151515 !important;}
 		/* Trailer */
 		.layout-tv .material-icons.theaters::before {content:"\e02c";font-family: 'Material Symbols Rounded' !important;font-weight:300;}
 		/* Favoris */
@@ -192,6 +195,15 @@ LAYOUT TV
 	.layout-tv #similarCollapsible .similarContent {margin-left:.5em;}
 /* Lecteur */
 .layout-tv .sliderBubble {border-radius:var(--border-radius-buttons);background:rgba(0,0,0,0.40);}
+.layout-tv .videoOsdBottom {background:linear-gradient(to top, rgba(0,0,0,.8) 65%, transparent);}
+	/* Slider */
+.layout-tv .osdControls .mdl-slider-background-flex {border-radius:3em;}
+	/* Boutons */
+	.layout-tv .osdControls .btnFastForward, .layout-tv .osdControls .btnRewind {display:none;}
+		/* Lecture | Pause */
+		.layout-tv .osdControls .btnPause, .layout-tv .osdControls .btnPlay {font-size:1.2em;padding:.3em;background:#fff;color:#151515;border-radius:var(--border-radius-play-button);}
+	/* Heure Fin */
+	.layout-tv .osdControls .osdTimeText {font-weight:600;text-transform: uppercase;color:#1FC000;}
 	/* Episode Suivant */
 	.layout-tv .upNextContainer {right:2%;border-radius:var(--border-radius-buttons);}
 	.layout-tv .upNextContainer h2.upNextDialog-nextVideoText {font-size:1.4em;}
