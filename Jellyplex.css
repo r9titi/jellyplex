@@ -14,6 +14,8 @@ LAYOUT TV
 	--border-radius-buttons: .3em;
 	--border-radius-command-buttons: 3em;
 	--border-radius-play-button: 50%;
+	--text-shadow-content: 2px 2px 3px rgba(0,0,0,1);
+	--text-shadow-content: 2px 2px 3px rgba(0,0,0,1);
 }
 
 /*Général*/
@@ -170,7 +172,7 @@ LAYOUT TV
 			.layout-tv .trackSelections .selectSubtitlesContainer::before {content:"\e048";}
 	/* Synopsis & Infos */
 	.layout-tv .detailSection {padding-bottom:4vw;}
-	.layout-tv .detailSectionContent {color:#D5D5D5;text-align:justify;width:60%;margin: 0 0 2vw 0;}
+	.layout-tv .detailSectionContent {color:#fff;text-align:justify;width:60%;margin: 0 0 2vw 0;text-shadow:var(--text-shadow-content);}
 	.layout-tv .itemDetailsGroup {color:#A4A4A4;font-size:.9em;}
 	.layout-tv .itemDetailsGroup .show-focus:focus, .layout-tv .itemDetailsGroup .show-focus:hover {background-color:transparent;transform: none;color:#fff !important;text-decoration:underline;}
 	.layout-tv .detailSection .detail-clamp-text {display: inline-block;}
