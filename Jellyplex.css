@@ -15,7 +15,6 @@ LAYOUT TV
 	--border-radius-command-buttons: 3em;
 	--border-radius-play-button: 50%;
 	--text-shadow-content: 2px 2px 3px rgba(0,0,0,1);
-	--text-shadow-content: 2px 2px 3px rgba(0,0,0,1);
 }
 
 /*Général*/
@@ -37,6 +36,8 @@ LAYOUT TV
 .layout-tv .withSectionTabs .withBackdrop {background-color:rgba(0,0,0,.9);mask:none;-webkit-mask:none;backdrop-filter:none;background-image:none;}
 	/* My Medias */
 	.layout-tv .section0 .cardText {display:none;}
+	.layout-tv .section0 .overflowBackdropCard .cardScalable {border:solid 2px transparent !important;}
+	.layout-tv .section0 .overflowBackdropCard:focus .cardScalable {border:solid 2px rgba(255,255,255,1) !important;}
 	/* My Medias (small)*/
 	.layout-tv .section0 {margin:0 0 2vw 0;}
 	.layout-tv .section0 .itemsContainer {padding-left:1.4vw !important;}
@@ -56,7 +57,7 @@ LAYOUT TV
 #loginPage .emby-button.show-focus:focus {background-color: rgba(255, 255, 255, 1);transform: scale(1.02);color:#000;}
 /* Effet affiches Verticales*/
 .layout-tv .card.show-animation:focus>.cardBox {-webkit-transform:scale(1.1);transform: scale(1.1);border:none !important;}
-.layout-tv .card:focus .cardBox.visualCardBox, .card:focus .cardBox:not(.visualCardBox) .cardScalable {border:none !important;-webkit-border:none;box-shadow:var(--shadowing-focus);}
+.layout-tv .card:focus .cardBox.visualCardBox, .card:focus .cardBox:not(.visualCardBox) .cardScalable {border:none;-webkit-border:none;box-shadow:var(--shadowing-focus);}
 .layout-tv .card:focus .cardBox.visualCardBox, .card:focus .cardBox:not(.visualCardBox) .cardScalable::after {content: '';position: absolute;top: 0; left: 0;right: 0; bottom: 0;background: rgba(255, 255, 255, 0.2);border-radius:0;}
 .layout-tv .cardBox {border-radius:0;}
 .layout-tv .card .cardBox.visualCardBox, .layout-tv .card .cardBox:not(.visualCardBox) .cardScalable, .layout-tv .card .cardBox:not(.visualCardBox) .cardPadder, .layout-tv .cardScalable .cardImageContainer {border-radius: 0;}
