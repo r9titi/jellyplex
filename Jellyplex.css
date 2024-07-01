@@ -35,6 +35,8 @@ LAYOUT TV
 /* Accueil */
 .layout-tv .withSectionTabs .backdropImage {background-color:transparent;background-size:100% !important;}
 .layout-tv .withSectionTabs .withBackdrop {background-color:rgba(0,0,0,.9);mask:none;-webkit-mask:none;backdrop-filter:none;background-image:none;}
+	/* My Medias */
+	.layout-tv .section0 .cardText {display:none;}
 	/* My Medias (small)*/
 	.layout-tv .section0 {margin:0 0 2vw 0;}
 	.layout-tv .section0 .itemsContainer {padding-left:1.4vw !important;}
