@@ -57,7 +57,7 @@ LAYOUT TV
 #loginPage .emby-button.show-focus:focus {background-color: rgba(255, 255, 255, 1);transform: scale(1.02);color:#000;}
 /* Effet affiches Verticales*/
 .layout-tv .card.show-animation:focus>.cardBox {-webkit-transform:scale(1.1);transform: scale(1.1);border:none !important;}
-.layout-tv .card:focus .cardBox.visualCardBox, .card:focus .cardBox:not(.visualCardBox) .cardScalable {border:none;-webkit-border:none;box-shadow:var(--shadowing-focus);}
+.layout-tv .card:focus .cardBox.visualCardBox, .card:focus .cardBox:not(.visualCardBox) .cardScalable {border:none !important;-webkit-border !important:none;box-shadow:var(--shadowing-focus);}
 .layout-tv .card:focus .cardBox.visualCardBox, .card:focus .cardBox:not(.visualCardBox) .cardScalable::after {content: '';position: absolute;top: 0; left: 0;right: 0; bottom: 0;background: rgba(255, 255, 255, 0.2);border-radius:0;}
 .layout-tv .cardBox {border-radius:0;}
 .layout-tv .card .cardBox.visualCardBox, .layout-tv .card .cardBox:not(.visualCardBox) .cardScalable, .layout-tv .card .cardBox:not(.visualCardBox) .cardPadder, .layout-tv .cardScalable .cardImageContainer {border-radius: 0;}
@@ -66,6 +66,7 @@ LAYOUT TV
 .layout-tv .cardBox:not(.visualCardBox) .cardPadder {background-color:transparent;box-shadow: none !important;}
 /* Effet affiches Horizontales*/
 .layout-tv .overflowBackdropCard .cardTextCentered, .layout-tv .backdropCard .cardTextCentered {text-align:left !important;}
+.layout-tv .overflowBackdropCard .cardBox-bottompadded {margin-top:.2em;}
 /* Effet Menu & Aperçu */
 .layout-tv .section0 .card .cardBox.visualCardBox, .section0 .card .cardBox:not(.visualCardBox) .cardScalable::after {content: '';position: absolute;top: 0; left: 0;right: 0; bottom: 0;background: rgba(0, 0, 0, 0.5);border-radius:0;}
 .layout-tv .section0 .card:focus .cardBox.visualCardBox, .section0 .card:focus .cardBox:not(.visualCardBox) .cardScalable::after {background: rgba(255, 255, 255, 0);}
