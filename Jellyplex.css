@@ -25,15 +25,19 @@ LAYOUT TV
 .layout-tv .sectionTitle:after {font-family: 'Material Symbols Rounded' !important; content:"\e5cc";font-weight:100;position :absolute;line-height:1.6em;}
 .defaultCardBackground, #loginPage .defaultCardBackground {background: linear-gradient(141deg,#AA5CC3,#00A4DC)!important;}
 .layout-tv .content-primary, .padded-bottom-page, .page, .pageWithAbsoluteTabs .pageTabContent {padding-bottom:0 !important;}
+.layout-tv .cardText-first {background: rgba(0, 0, 0, .3);}
+.layout-tv .cardText-secondary {padding-top: 5px;background: rgba(0, 0, 0, .3);}
+.layout-tv .actionSheetContent {background:rgba(0,0,0,.9);}
 
 /* Top Menu */
 .layout-tv .pageWithAbsoluteTabs:not(.noSecondaryNavPage) {padding-top:6vw !important;}
 .layout-tv .skinHeader, .layout-tv .skinHeader.semiTransparent {background:linear-gradient(to bottom, rgba(0,0,0,.5), transparent);box-shadow:none;}
 .layout-tv .skinHeader .emby-tab-button.show-focus:focus {color:#fff;}
 .layout-tv .material-icons.arrow_back:before {content:"\e5e0";font-weight:200;font-family: 'Material Symbols Rounded' !important;}
+.layout-tv .paper-icon-button-light:hover:not(:disabled) {background:none;}
 /* Accueil */
 .layout-tv .withSectionTabs .backdropImage {background-color:transparent;background-size:100% !important;}
-.layout-tv .withSectionTabs .withBackdrop {background-color:rgba(0,0,0,.9);mask:none;-webkit-mask:none;backdrop-filter:none;background-image:none;}
+.layout-tv .withSectionTabs .withBackdrop {background-image:url("https://cdn.jsdelivr.net/gh/r9titi/jellyplex@main/img/Background.jpg") !important;mask:none;-webkit-mask:none;backdrop-filter:none;background-size: cover;}
 	/* My Medias */
 	.layout-tv .section0 .cardText {display:none;}
 	.layout-tv .section0 .overflowBackdropCard .cardScalable {border:solid 2px transparent !important;}
@@ -61,7 +65,7 @@ LAYOUT TV
 .layout-tv .card:focus .cardBox.visualCardBox, .card:focus .cardBox:not(.visualCardBox) .cardScalable::after {content: '';position: absolute;top: 0; left: 0;right: 0; bottom: 0;background: rgba(255, 255, 255, 0.2);border-radius:0;}
 .layout-tv .cardBox {border-radius:0;}
 .layout-tv .card .cardBox.visualCardBox, .layout-tv .card .cardBox:not(.visualCardBox) .cardScalable, .layout-tv .card .cardBox:not(.visualCardBox) .cardPadder, .layout-tv .cardScalable .cardImageContainer {border-radius: 0;}
-.layout-tv .cardText-first {color:#fff;}
+.layout-tv .overflowPortraitCard .cardText-first, .layout-tv .overflowPortraitCard .cardText-secondary {color:#fff;display:none;}
 .layout-tv .cardText-secondary {padding-bottom: 10px;}
 .layout-tv .cardBox:not(.visualCardBox) .cardPadder {background-color:transparent;box-shadow: none !important;}
 /* Effet affiches Horizontales*/
@@ -214,6 +218,6 @@ LAYOUT TV
 	.layout-tv .upNextContainer {right:2%;border-radius:var(--border-radius-buttons);}
 	.layout-tv .upNextContainer h2.upNextDialog-nextVideoText {font-size:1.4em;}
 	.layout-tv .upNextContainer .endsAt {padding-top:0;}
-	.layout-tv .upNextContainer .emby-button {border-radius:var(--border-radius-buttons);}
+	.layout-tv .upNextContainer .emby-button {border-radius:var(--border-radius-command-buttons);}
 	.layout-tv .upNextContainer .emby-button:focus {background:#fff;color:#000;transform:none}
 	
