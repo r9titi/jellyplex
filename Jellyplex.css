@@ -36,8 +36,8 @@ LAYOUT TV
 .layout-tv .material-icons.arrow_back:before {content:"\e5e0";font-weight:200;font-family: 'Material Symbols Rounded' !important;}
 .layout-tv .paper-icon-button-light:hover:not(:disabled) {background:none;}
 /* Accueil */
-.layout-tv .withSectionTabs .backdropImage {background-color:transparent;background-size:100% !important;}
-.layout-tv .withSectionTabs .withBackdrop {background-image:url("https://cdn.jsdelivr.net/gh/r9titi/jellyplex@main/img/Background.jpg") !important;mask:none;-webkit-mask:none;backdrop-filter:none;background-size: cover;}
+.layout-tv .withSectionTabs .backdropImage {background-color:transparent;background-size:100% !important;filter: blur(100px)}
+.layout-tv .withSectionTabs .withBackdrop {background:rgba(0, 0, 0, 0.7) !important;mask:none;-webkit-mask:none;backdrop-filter:none;background-size: cover;}
 	/* My Medias */
 	.layout-tv .section0 .cardText {display:none;}
 	.layout-tv .section0 .overflowBackdropCard .cardScalable {border:solid 2px transparent !important;}
