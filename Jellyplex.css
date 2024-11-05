@@ -25,8 +25,7 @@ LAYOUT TV
 .layout-tv .sectionTitle:after {font-family: 'Material Symbols Rounded' !important; content:"\e5cc";font-weight:100;position :absolute;line-height:1.6em;}
 .defaultCardBackground, #loginPage .defaultCardBackground {background: linear-gradient(141deg,#AA5CC3,#00A4DC)!important;}
 .layout-tv .content-primary, .padded-bottom-page, .page, .pageWithAbsoluteTabs .pageTabContent {padding-bottom:0 !important;}
-.layout-tv .cardText-first {background: rgba(0, 0, 0, .3);}
-.layout-tv .cardText-secondary {padding-top: 5px;background: rgba(0, 0, 0, .3);}
+.layout-tv .cardText-secondary {padding-top: 5px;}
 .layout-tv .actionSheetContent {background:rgba(0,0,0,.9);}
 
 /* Top Menu */
@@ -65,7 +64,7 @@ LAYOUT TV
 .layout-tv .card:focus .cardBox.visualCardBox, .card:focus .cardBox:not(.visualCardBox) .cardScalable::after {content: '';position: absolute;top: 0; left: 0;right: 0; bottom: 0;background: rgba(255, 255, 255, 0.2);border-radius:0;}
 .layout-tv .cardBox {border-radius:0;}
 .layout-tv .card .cardBox.visualCardBox, .layout-tv .card .cardBox:not(.visualCardBox) .cardScalable, .layout-tv .card .cardBox:not(.visualCardBox) .cardPadder, .layout-tv .cardScalable .cardImageContainer {border-radius: 0;}
-.layout-tv .overflowPortraitCard .cardText-first, .layout-tv .overflowPortraitCard .cardText-secondary {color:#fff;display:none;}
+.layout-tv .overflowPortraitCard .cardText-first, .layout-tv .overflowPortraitCard .cardText-secondary {display:none;}
 .layout-tv .cardText-secondary {padding-bottom: 10px;}
 .layout-tv .cardBox:not(.visualCardBox) .cardPadder {background-color:transparent;box-shadow: none !important;}
 /* Effet affiches Horizontales*/
@@ -201,6 +200,8 @@ LAYOUT TV
 	.layout-tv #castContent > button > div > div.cardScalable > div.cardImageContainer.coveredImage.cardContent.lazy.non-blurhashable.lazy-image-fadein-fast {border-radius:50%;}
 	.layout-tv #castContent .personCard:focus .cardBox .cardScalable {border-radius:50%;filter:none;border:solid 3px #fff !important; border-color: #fff !important;}
 	.layout-tv #castContent .personCard:focus .cardBox .cardScalable::after {background: none;}
+	.layout-tv #castContent .overflowPortraitCard .cardText-first, .layout-tv #castContent .overflowPortraitCard .cardText-secondary {display:block;}
+	.layout-tv #castContent .overflowPortraitCard .cardText-secondary {color:rgba(255, 255, 255, 0.5)}
 	/* PLus de ce genre */
 	.layout-tv #similarCollapsible .similarContent {margin-left:.5em;}
 /* Lecteur */
