@@ -63,8 +63,12 @@ LAYOUT TV
 .layout-tv .card:focus .cardBox.visualCardBox, .card:focus .cardBox:not(.visualCardBox) .cardScalable {border:none !important;-webkit-border !important:none;box-shadow:var(--shadowing-focus);}
 .layout-tv .card:focus .cardBox.visualCardBox, .card:focus .cardBox:not(.visualCardBox) .cardScalable::after {content: '';position: absolute;top: 0; left: 0;right: 0; bottom: 0;background: rgba(255, 255, 255, 0.2);border-radius:0;}
 .layout-tv .cardBox {border-radius:0;}
+.layout-tv .itemsContainer .card .cardBox {margin-right:.8em;}
 .layout-tv .card .cardBox.visualCardBox, .layout-tv .card .cardBox:not(.visualCardBox) .cardScalable, .layout-tv .card .cardBox:not(.visualCardBox) .cardPadder, .layout-tv .cardScalable .cardImageContainer {border-radius: 0;}
 .layout-tv .overflowPortraitCard .cardText-first, .layout-tv .overflowPortraitCard .cardText-secondary {display:none;}
+	/* Affiches hors Acceuil*/
+	.layout-tv .itemsContainer .portraitCard .cardBox .cardText-first {display:none;}
+	.layout-tv .itemsContainer .portraitCard .cardBox .cardText-secondary{position: absolute;top: 3%;background: rgba(0,0,0,.6);color: #e2e2e2;border-radius: 0 10px 10px 0;max-width: 85%;padding: 2px 7px 3px 2px;box-shadow:var(--shadowing);}
 .layout-tv .cardText-secondary {padding-bottom: 10px;}
 .layout-tv .cardBox:not(.visualCardBox) .cardPadder {background-color:transparent;box-shadow: none !important;}
 /* Effet affiches Horizontales*/
